@@ -11,7 +11,6 @@
   --color-accent: #0f6d8c;
   --color-accent-strong: #0a4f66;
   --color-accent-soft: #e4f0f3;
-  --color-pdf: #a4453f;
   --color-doi: #3a5f8a;
   --shadow-sm: 0 1px 2px rgba(20, 30, 34, 0.06);
   --shadow-md: 0 4px 16px rgba(20, 30, 34, 0.08);
@@ -32,7 +31,6 @@
     --color-accent: #5fc0e0;
     --color-accent-strong: #8fd6ee;
     --color-accent-soft: #1f333b;
-    --color-pdf: #e0847a;
     --color-doi: #8ab4e0;
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
     --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.45);
@@ -365,7 +363,7 @@ main.page { min-height: 50vh; }
 .pub-item__authors { color: var(--color-text-muted); font-size: 0.92rem; margin-top: 3px; }
 .pub-item__authors u { text-decoration-color: var(--color-accent); text-decoration-thickness: 1.5px; text-underline-offset: 2px; }
 .pub-item__note { color: var(--color-accent-strong); font-size: 0.88rem; margin-top: 4px; }
-.pdf-link, .doi-link {
+.doi-link {
   font-size: 0.85rem;
   font-weight: 600;
   white-space: nowrap;
@@ -373,10 +371,8 @@ main.page { min-height: 50vh; }
   border-radius: 6px;
   padding: 13px 14px;
   text-align: center;
+  color: var(--color-doi);
 }
-.pdf-link { color: var(--color-pdf); }
-.pdf-link:hover { border-color: var(--color-pdf); text-decoration: none; }
-.doi-link { color: var(--color-doi); }
 .doi-link:hover { border-color: var(--color-doi); text-decoration: none; }
 
 /* ---------------------------------------------------------------- */

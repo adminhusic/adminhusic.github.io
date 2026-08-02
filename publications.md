@@ -52,7 +52,6 @@ subtitle: "Peer-reviewed journal articles."
       </div>
       <div class="pub-item__links">
         {% if pub.doi %}<a class="doi-link" href="{{ pub.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
-        {% if pub.pdf %}<a class="pdf-link" href="{{ '/assets/pdfs/' | append: pub.pdf | relative_url }}" target="_blank" rel="noopener">PDF</a>{% endif %}
       </div>
     </li>
   {% endfor %}

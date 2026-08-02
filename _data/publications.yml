@@ -18,8 +18,12 @@
 #   doi:       DOI URL (e.g. "https://doi.org/10.xxxx/..."), or null if not
 #              yet filled in — none are populated automatically; add real
 #              DOIs here to make the DOI button appear per entry.
-#   pdf:       matching filename in assets/pdfs/, or null if no PDF on file
 #   note:      optional trailing annotation (e.g. an editor's-pick note)
+#
+# No `pdf` field: publication PDFs are intentionally not self-hosted (not all
+# articles are open access, and the author does not hold blanket redistribution
+# rights on the publisher's typeset PDF for closed-access work). The DOI link
+# is the only download path, for every entry, open-access or not.
 
 - year: 2026
   status: "in_review"
@@ -29,7 +33,6 @@
   journal: null
   citation: "In Revision"
   doi: null
-  pdf: null
 
 - year: 2026
   status: "in_review"
@@ -39,7 +42,6 @@
   journal: null
   citation: "In Revision"
   doi: null
-  pdf: null
 
 - year: 2026
   status: "in_review"
@@ -49,7 +51,6 @@
   journal: null
   citation: "In Revision"
   doi: null
-  pdf: null
 
 - year: 2026
   status: "in_review"
@@ -59,7 +60,6 @@
   journal: null
   citation: "In Revision"
   doi: null
-  pdf: null
 
 - year: 2026
   status: "in_review"
@@ -69,7 +69,6 @@
   journal: null
   citation: "In Review"
   doi: null
-  pdf: null
 
 - year: 2026
   status: "in_review"
@@ -79,7 +78,6 @@
   journal: null
   citation: "In Review"
   doi: null
-  pdf: null
 
 - year: 2026
   status: "in_review"
@@ -89,7 +87,6 @@
   journal: null
   citation: "In Review"
   doi: null
-  pdf: null
 
 - year: 2026
   status: "published"
@@ -99,7 +96,6 @@
   journal: "Communications Earth & Environment"
   citation: "In Press"
   doi: "https://doi.org/10.1038/s43247-026-03847-8"
-  pdf: null
 
 - year: 2026
   status: "published"
@@ -109,7 +105,6 @@
   journal: "Communications Earth & Environment"
   citation: "In Press"
   doi: "https://doi.org/10.1038/s43247-026-03788-2"
-  pdf: null
 
 - year: 2026
   status: "published"
@@ -119,7 +114,6 @@
   journal: "Nature Communications"
   citation: "In Press"
   doi: "https://doi.org/10.1038/s41467-026-76024-2"
-  pdf: null
 
 - year: 2026
   status: "published"
@@ -129,7 +123,6 @@
   journal: "Hydrology and Earth System Sciences"
   citation: "30, 3647–3673"
   doi: "https://doi.org/10.5194/hess-30-3647-2026"
-  pdf: "Araki-et-al-2026-HESS.pdf"
 
 - year: 2026
   status: "published"
@@ -139,7 +132,6 @@
   journal: "Hydrological Processes"
   citation: "40(5), e70572"
   doi: "https://doi.org/10.1002/hyp.70572"
-  pdf: "Sando-et-al-2026-HP.pdf"
 
 - year: 2026
   status: "published"
@@ -149,7 +141,6 @@
   journal: "Water Resources Research"
   citation: "62(5), e2025WR043141"
   doi: "https://doi.org/10.1029/2025WR043141"
-  pdf: "Li-et-al-2026-WRR.pdf"
 
 - year: 2026
   status: "published"
@@ -159,7 +150,6 @@
   journal: "Earth Surface Processes and Landforms"
   citation: "51(4), e70289"
   doi: "https://doi.org/10.1002/esp.70289"
-  pdf: "Layzell-et-al-2026-ESPL.pdf"
 
 - year: 2026
   status: "published"
@@ -169,7 +159,6 @@
   journal: "Journal of Hydrology"
   citation: "674, 135492"
   doi: "https://doi.org/10.1016/j.jhydrol.2026.135492"
-  pdf: "Brandao-et-al-2026-JH.pdf"
 
 - year: 2026
   status: "published"
@@ -179,7 +168,6 @@
   journal: "Atmospheric Research"
   citation: "338, 108971"
   doi: "https://doi.org/10.1016/j.atmosres.2026.108971"
-  pdf: "Valencia-et-al-2026-AR.pdf"
 
 - year: 2026
   status: "published"
@@ -189,7 +177,6 @@
   journal: "Science of the Total Environment"
   citation: "1029, 181715"
   doi: "https://doi.org/10.1016/j.scitotenv.2026.181715"
-  pdf: "Riddle-et-al-2026-STOTEN.pdf"
 
 - year: 2026
   status: "published"
@@ -199,7 +186,6 @@
   journal: "Communications Earth & Environment"
   citation: "7, 133"
   doi: "https://doi.org/10.1038/s43247-025-03152-w"
-  pdf: "Grant-et-al-2026-CEE.pdf"
 
 - year: 2026
   status: "published"
@@ -209,7 +195,6 @@
   journal: "Ecosystems"
   citation: "29, 26"
   doi: "https://doi.org/10.1007/s10021-025-01041-z"
-  pdf: "Lane-et-al-2026-ECO.pdf"
 
 - year: 2026
   status: "published"
@@ -219,7 +204,6 @@
   journal: "Water Research"
   citation: "288, 124652"
   doi: "https://doi.org/10.1016/j.watres.2025.124652"
-  pdf: "Bhide-et-al-2026-WR.pdf"
 
 - year: 2025
   status: "published"
@@ -229,7 +213,6 @@
   journal: "River Research and Applications"
   citation: "41, 2177-2188"
   doi: "https://doi.org/10.1002/rra.70032"
-  pdf: "Shrestha-et-al-2025-RRA.pdf"
 
 - year: 2025
   status: "published"
@@ -239,7 +222,6 @@
   journal: "Water Resources Research"
   citation: "61(8), e2024WR039207"
   doi: "https://doi.org/10.1029/2024WR039207"
-  pdf: "Pandit-et-al-2025-WRR.pdf"
 
 - year: 2025
   status: "published"
@@ -249,7 +231,6 @@
   journal: "Hydrology and Earth System Sciences"
   citation: "29(18), 4457–4472"
   doi: "https://doi.org/10.5194/hess-29-4457-2025"
-  pdf: "Husic-et-al-2025-HESS.pdf"
 
 - year: 2025
   status: "published"
@@ -259,7 +240,6 @@
   journal: "Environmental Science and Technology"
   citation: "59(27), 14053–14062"
   doi: "https://doi.org/10.1021/acs.est.5c04512"
-  pdf: "Marin-et-al-2025-EST.pdf"
 
 - year: 2025
   status: "published"
@@ -269,7 +249,6 @@
   journal: "Water Resources Research"
   citation: "61(6), e2024WR038654"
   doi: "https://doi.org/10.1029/2024WR038654"
-  pdf: "Li-et-al-2025-WRR.pdf"
 
 - year: 2025
   status: "published"
@@ -279,7 +258,6 @@
   journal: "Hydrological Processes"
   citation: "39(4), e70111"
   doi: "https://doi.org/10.1002/hyp.70111"
-  pdf: "Spellman-et-al-2025-HP.pdf"
 
 - year: 2025
   status: "published"
@@ -289,7 +267,6 @@
   journal: "Water Research"
   citation: "274, 123156"
   doi: "https://doi.org/10.1016/j.watres.2025.123156"
-  pdf: "Pandit-et-al-2025-WR.pdf"
 
 - year: 2025
   status: "published"
@@ -299,7 +276,6 @@
   journal: "Nature Water"
   citation: "3(1), 16–26"
   doi: "https://doi.org/10.1038/s44221-024-00351-1"
-  pdf: "Golden-et-al-2025-NAT-WAT.pdf"
 
 - year: 2025
   status: "published"
@@ -309,7 +285,6 @@
   journal: "Hydrological Processes"
   citation: "39(1), e70054"
   doi: "https://doi.org/10.1002/hyp.70054"
-  pdf: "Riddle-et-al-2025-HP.pdf"
 
 - year: 2025
   status: "published"
@@ -319,7 +294,6 @@
   journal: "Journal of Hydrology"
   citation: "649, 132300"
   doi: "https://doi.org/10.1016/j.jhydrol.2024.132300"
-  pdf: "Bettel-et-al-2025-JH.pdf"
 
 - year: 2024
   status: "published"
@@ -329,7 +303,6 @@
   journal: "Journal of Environmental Quality"
   citation: "53, 492-507"
   doi: "https://doi.org/10.1002/jeq2.20578"
-  pdf: "Clune-et-al-2024-JEQ.pdf"
 
 - year: 2024
   status: "published"
@@ -339,7 +312,6 @@
   journal: "Advances in Water Resources"
   citation: "187, 104693"
   doi: "https://doi.org/10.1016/j.advwatres.2024.104693"
-  pdf: "Zarnaghsh-et-al-2024-ADWR.pdf"
 
 - year: 2024
   status: "published"
@@ -349,7 +321,6 @@
   journal: "Water Research"
   citation: "253, 121357"
   doi: "https://doi.org/10.1016/j.watres.2024.121357"
-  pdf: "Rider-et-al-2024-WR.pdf"
 
 - year: 2023
   status: "published"
@@ -359,7 +330,6 @@
   journal: "Nature Communications"
   citation: "14, 6788"
   doi: "https://doi.org/10.1038/s41467-023-42384-2"
-  pdf: "Michalek-et-al-2023-NAT-COMS.pdf"
 
 - year: 2023
   status: "published"
@@ -369,7 +339,6 @@
   journal: "Science of the Total Environment"
   citation: "894, 164931"
   doi: "https://doi.org/10.1016/j.scitotenv.2023.164931"
-  pdf: "Zarnaghsh-Husic-2023-STOTEN.pdf"
 
 - year: 2023
   status: "published"
@@ -379,7 +348,6 @@
   journal: "Science of the Total Environment"
   citation: "894, 165093"
   doi: "https://doi.org/10.1016/j.scitotenv.2023.165093"
-  pdf: "McVey-et-al-2023-STOTEN.pdf"
 
 - year: 2023
   status: "published"
@@ -389,7 +357,6 @@
   journal: "Water Resources Research"
   citation: "59(1), e2022WR033180"
   doi: "https://doi.org/10.1029/2022WR033180"
-  pdf: "Husic-et-al-2023-WRR.pdf"
 
 - year: 2023
   status: "published"
@@ -399,7 +366,6 @@
   journal: "Journal of the American Water Resources Association"
   citation: "59(4), 635-651"
   doi: "https://doi.org/10.1111/1752-1688.13107"
-  pdf: "Gerlitz-et-al-2023-JAWRA.pdf"
 
 - year: 2022
   status: "published"
@@ -409,7 +375,6 @@
   journal: "Geophysical Research Letters"
   citation: "49(15), e2022GL099898"
   doi: "https://doi.org/10.1029/2022GL099898"
-  pdf: "Husic-Michalek-2022-GRL.pdf"
   note: "*Selected by Editors as a Research Spotlight."
 
 - year: 2022
@@ -420,7 +385,6 @@
   journal: "Geophysical Research Letters"
   citation: "49(2), e2021GL094497"
   doi: "https://doi.org/10.1029/2021GL094497"
-  pdf: "Percich-et-al-2022-GRL.pdf"
 
 - year: 2022
   status: "published"
@@ -430,7 +394,6 @@
   journal: "Journal of Hydrology X"
   citation: "17, 100134"
   doi: "https://doi.org/10.1016/j.hydroa.2022.100134"
-  pdf: "Husic-et-al-2022-JH-x.pdf"
 
 - year: 2022
   status: "published"
@@ -440,7 +403,6 @@
   journal: "Journal of Hydrology"
   citation: "613, 128391"
   doi: "https://doi.org/10.1016/j.jhydrol.2022.128391"
-  pdf: "Bettel-et-al-2022-JH.pdf"
 
 - year: 2021
   status: "published"
@@ -450,7 +412,6 @@
   journal: "Water"
   citation: "13(24), 3556"
   doi: "https://doi.org/10.3390/w13243556"
-  pdf: "Michalek-et-al-2021-WATER.pdf"
 
 - year: 2021
   status: "published"
@@ -460,7 +421,6 @@
   journal: "Environmental Science and Technology"
   citation: "55(20), 13737–13748"
   doi: "https://doi.org/10.1021/acs.est.1c00740"
-  pdf: "Zarnaghsh-Husic-2021-EST.pdf"
 
 - year: 2021
   status: "published"
@@ -470,7 +430,6 @@
   journal: "Journal of Geophysical Research: Biogeosciences"
   citation: "126(12), e2021JG006469"
   doi: "https://doi.org/10.1029/2021JG006469"
-  pdf: "Kelly-et-al-2021-JGR-BGS.pdf"
 
 - year: 2021
   status: "published"
@@ -480,7 +439,6 @@
   journal: "Journal of Geophysical Research: Biogeosciences"
   citation: "126(10), e2021JG006454"
   doi: "https://doi.org/10.1029/2021JG006454"
-  pdf: "Husic-et-al-2021-JGR-BGS.pdf"
 
 - year: 2021
   status: "published"
@@ -490,17 +448,15 @@
   journal: "Science of the Total Environment"
   citation: "764, 144255"
   doi: "https://doi.org/10.1016/j.scitotenv.2020.144255"
-  pdf: "Michalek-et-al-2021-STOTEN.pdf"
 
 - year: 2021
   status: "published"
   lead: "external"
   authors: "Al Aamery, N., Adams, E., Fox, J., <strong>Husic, A.</strong>, Gerlitz, M., Agouridis, C., and Zhu, J."
-  title: "Pathway connectivity in an epigenetic fluviokarst system: insight from a numerical modelling study in Kentucky USA"
+  title: "Numerical model development for investigating hydrologic pathways in shallow fluviokarst"
   journal: "Journal of Hydrology"
   citation: "593, 125844"
-  doi: null
-  pdf: "Al-Aamery-et-al-2021-JH.pdf"
+  doi: "https://doi.org/10.1016/j.jhydrol.2020.125844"
 
 - year: 2020
   status: "published"
@@ -510,7 +466,6 @@
   journal: "Water Resources Research"
   citation: "56 (10), e2020WR027446"
   doi: "https://doi.org/10.1029/2020WR027446"
-  pdf: "Husic-et-al-2020b-WRR.pdf"
 
 - year: 2020
   status: "published"
@@ -520,7 +475,6 @@
   journal: "Water Research"
   citation: "(170), 115348"
   doi: "https://doi.org/10.1016/j.watres.2019.115348"
-  pdf: "Husic-et-al-2020a-WR.pdf"
 
 - year: 2019
   status: "published"
@@ -530,7 +484,6 @@
   journal: "Hydrological Processes"
   citation: "33 (11), 1610-1628"
   doi: "https://doi.org/10.1002/hyp.13427"
-  pdf: "Ford-et-al-2019-HP.pdf"
 
 - year: 2019
   status: "published"
@@ -540,7 +493,6 @@
   journal: "Water Resources Research"
   citation: "55(3), 2079-2103"
   doi: "https://doi.org/10.1029/2018WR023703"
-  pdf: "Husic-et-al-2019b-WRR.pdf"
 
 - year: 2019
   status: "published"
@@ -550,7 +502,6 @@
   journal: "Geomorphology"
   citation: "322, 122-137"
   doi: "https://doi.org/10.1016/j.geomorph.2019.02.006"
-  pdf: "Ghesemi-et-al-2019-GEO.pdf"
 
 - year: 2019
   status: "published"
@@ -560,7 +511,6 @@
   journal: "Environmental Earth Science"
   citation: "78(36)"
   doi: "https://doi.org/10.1007/s12665-018-8018-x"
-  pdf: "Husic-et-al-2019a-EES.pdf"
 
 - year: 2018
   status: "published"
@@ -570,7 +520,6 @@
   journal: "Transactions of the American Society of Agricultural and Biological Engineers"
   citation: "61, 139-157"
   doi: "https://doi.org/10.13031/trans.12545"
-  pdf: "Jensen-et-al-2018-ASABE.pdf"
 
 - year: 2017
   status: "published"
@@ -580,7 +529,6 @@
   journal: "Journal of Hydrology"
   citation: "549, 179-193"
   doi: "https://doi.org/10.1016/j.jhydrol.2017.03.052"
-  pdf: "Husic-et-al-2017a-JH.pdf"
 
 - year: 2017
   status: "published"
@@ -590,4 +538,3 @@
   journal: "Journal of Hydrology"
   citation: "549, 208-219"
   doi: "https://doi.org/10.1016/j.jhydrol.2017.03.059"
-  pdf: "Husic-et-al-2017b-JH.pdf"
