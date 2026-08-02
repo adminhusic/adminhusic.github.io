@@ -1,0 +1,23 @@
+- title: "Fluid Mechanics"
+  level: Undergraduate
+  description: "Fundamentals of fluid statics, dynamics, and pipe/open-channel flow for civil and environmental engineers."
+
+- title: "Fluid Mechanics Lab"
+  level: Undergraduate
+  description: "Laboratory companion to Fluid Mechanics; hands-on experiments in hydrostatics, pipe flow, and open-channel hydraulics."
+
+- title: "Open Channel Flow"
+  level: Graduate
+  description: "Steady and unsteady open-channel hydraulics, including gradually/rapidly varied flow, hydraulic structures, and sediment-laden flow."
+
+- title: "Mechanics of Sediment Transport"
+  level: Graduate
+  description: "Mechanics of sediment entrainment, transport, and deposition in rivers, and applications to erosion and reservoir sedimentation."
+
+- title: "Watershed Erosion and Sedimentation"
+  level: Graduate
+  description: "Watershed-scale erosion processes, sediment yield and delivery, fingerprinting methods, and best management practices."
+
+- title: "Machine Learning in Water Resources"
+  level: Graduate
+  description: "Applied machine learning and deep learning for hydrologic prediction, from regression and tree-based methods through LSTMs and interpretable ML."

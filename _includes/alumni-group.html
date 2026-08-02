@@ -1,0 +1,13 @@
+{% if include.group.size > 0 %}
+<div class="alumni-group">
+  <h3 class="alumni-group-title">{{ include.title }}</h3>
+  <ul class="alumni-list">
+    {% for person in include.group %}
+    <li>
+      <h4 class="alumni-name">{{ person.name }}{% if person.last_year > 0 %} <span class="alumni-year">&middot; {{ person.last_year }}</span>{% endif %}</h4>
+      <span class="role">{{ person.note }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

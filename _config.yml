@@ -1,0 +1,56 @@
+title: Admin Husic
+tagline: Dynamic Connectivity Lab
+description: >-
+  Research and teaching site of Admin Husic, Associate Professor of Civil and
+  Environmental Engineering at Virginia Tech. Hydrologic connectivity, sediment
+  and nutrient transport, and machine learning for water resources.
+author: Admin Husic
+
+email: husic@vt.edu
+orcid: "0000-0002-4225-2252"
+vt_profile: "https://www.webapps.cee.vt.edu/index.php?category=people&pagetype=bio&do=getprofile&user=husic.html"
+linkedin: "https://www.linkedin.com/in/admin-husic/"
+
+# Leave url/baseurl blank for a GitHub user-page repo (adminhusic.github.io) served at the domain root.
+# If this instead lives in a project-page repo (e.g. github.com/adminhusic/faculty-site),
+# set baseurl to "/faculty-site" so links resolve correctly on GitHub Pages.
+url: ""
+baseurl: ""
+
+# The github-pages gem defaults to `theme: jekyll-theme-primer` when this key is
+# absent, and that theme's own assets/css/style.css silently overwrites this
+# site's custom stylesheet at build time. Keep this explicit and null.
+theme: null
+
+permalink: pretty
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
+  - PRODUCT.md
+  - DESIGN.md
+  - .impeccable
+
+nav:
+  - title: Home
+    path: /
+  - title: Research
+    path: /research/
+  - title: People
+    path: /people/
+  - title: Publications
+    path: /publications/
+  - title: Teaching
+    path: /teaching/
+  - title: Join Us
+    path: /join-us/

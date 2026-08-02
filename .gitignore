@@ -1,0 +1,24 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+Gemfile.lock
+.sass-cache/
+
+# Original raw source materials (CV docx, raw PDFs, inspiration links, full-res
+# headshot) kept on disk for reference but not published or duplicated into git
+# -- the site uses the processed copies in assets/ instead.
+.source/
+
+# Claude Code tooling config (dev-server launch config, local settings) --
+# local machine setup, not site content.
+.claude/
+
+# Impeccable design-process working files (product/design docs, sidecar,
+# critique snapshots) -- internal working notes, not published with the site.
+# Already excluded from the Jekyll build output via _config.yml's `exclude:`;
+# this additionally keeps them out of the public repo entirely.
+PRODUCT.md
+DESIGN.md
+.impeccable/

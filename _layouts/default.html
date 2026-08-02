@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+{% include head.html %}
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+{% include header.html %}
+<main class="wrap page{% if page.wide %} page--wide{% endif %}" id="main-content">
+  {% unless page.hide_title %}
+  <h1 class="page-title">{{ page.title }}</h1>
+  {% if page.subtitle %}<p class="page-subtitle">{{ page.subtitle }}</p>{% endif %}
+  {% endunless %}
+  {{ content }}
+</main>
+{% include footer.html %}
+</body>
+</html>

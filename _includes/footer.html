@@ -1,0 +1,22 @@
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div class="site-footer__top">
+      <span class="site-footer__brand">Admin Husic &middot; {{ site.tagline }}</span>
+      <div class="site-footer__icons">
+        <a class="icon-link" href="{{ site.vt_profile }}" target="_blank" rel="noopener" aria-label="Virginia Tech Faculty Profile" title="Virginia Tech Faculty Profile">
+          <img src="{{ '/assets/img/Virginia-Tech-Logo.png' | relative_url }}" alt="Virginia Tech" height="16" loading="lazy">
+        </a>
+        <a class="icon-link" href="https://orcid.org/{{ site.orcid }}" target="_blank" rel="noopener" aria-label="ORCID: {{ site.orcid }}" title="ORCID: {{ site.orcid }}">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#A6CE39"/><text x="12" y="16.3" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="700" font-style="italic" text-anchor="middle" fill="#ffffff">iD</text></svg>
+        </a>
+        <a class="icon-link" href="{{ site.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn profile" title="LinkedIn">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#0A66C2"/><text x="12" y="17" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#ffffff">in</text></svg>
+        </a>
+        <a class="icon-link" href="mailto:{{ site.email }}" aria-label="Email: {{ site.email }}" title="Email: {{ site.email }}">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>

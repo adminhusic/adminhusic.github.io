@@ -1,0 +1,593 @@
+# Peer-reviewed journal articles for Admin Husic
+# Auto-generated from CV text. Order matches the CV (In Review first, then
+# Published, both in the CV's given / reverse-chronological order).
+#
+# Schema per entry:
+#   year:      integer, publication (or expected) year
+#   status:    "in_review" or "published"
+#   lead:      "lab" if the first author is Husic or one of his own current/
+#              former student or postdoc advisees (an underlined name below),
+#              else "external" (a collaborator outside the lab is first author)
+#   authors:   full author list as written in the CV, up to the year.
+#              <u> wraps student/postdoc advisee names (per the CV's own
+#              underline convention); <strong> wraps Husic, A.
+#   title:     article title only, no trailing period
+#   journal:   journal name only (null if not yet assigned / not stated)
+#   citation:  everything after the journal name (volume/issue/pages/article
+#              number, or "In Press"/"In Revision"/"In Review")
+#   doi:       DOI URL (e.g. "https://doi.org/10.xxxx/..."), or null if not
+#              yet filled in — none are populated automatically; add real
+#              DOIs here to make the DOI button appear per entry.
+#   pdf:       matching filename in assets/pdfs/, or null if no PDF on file
+#   note:      optional trailing annotation (e.g. an editor's-pick note)
+
+- year: 2026
+  status: "in_review"
+  lead: "lab"
+  authors: "<u>Percich, A.</u>, Gellis, A., Fox, J., and <strong>Husic, A.</strong>"
+  title: "Upscaling sediment source prediction for watershed management"
+  journal: null
+  citation: "In Revision"
+  doi: null
+  pdf: null
+
+- year: 2026
+  status: "in_review"
+  lead: "external"
+  authors: "Liu, F., <u>Zarnaghsh, A.</u>, <strong>Husic, A.</strong>, and Li. L."
+  title: "Extreme storms intensified water quality responses most strongly in low-urban rivers"
+  journal: null
+  citation: "In Revision"
+  doi: null
+  pdf: null
+
+- year: 2026
+  status: "in_review"
+  lead: "external"
+  authors: "Seybold, E., Hammond, J., <strong>Husic, A.</strong>, McMillan, H., Golden, H., Christensen, J., Segura, C., Zimmer, M., Price, A., Jaeger, K., Li, L., Mahoney, T., Cheng, F., Jones, N., Kelleher, C., Sando, R., and Lane, C.,"
+  title: "Headwaters across the contiguous United States challenge preconceived conceptual models"
+  journal: null
+  citation: "In Revision"
+  doi: null
+  pdf: null
+
+- year: 2026
+  status: "in_review"
+  lead: "external"
+  authors: "Zang, Y., Treble, P., Yoshimura, K., Pinza, J., Zhang, F., Özdemir, K., Mei, X., <strong>Husic, A.</strong>, Gessert, A., Stroj, A., Andreo, B., Ladouche, B., Stumpp, C., Mance, D., Zagana, E., Huang, F., Sappa, G., Kunstmann, H., Brielmann, H., Zhou, H., Wu, H., Garvelmann, J., Berglund, J., Charlier, J.-B., Lange, J., Barberá Fornell, J., Pu, J., Katsanou, K., Ren, K., Toran, L., Gill, L., Filippini, M., Kralik, M., Mudarra Martínez, M., Zhao, M., Luo, M., Goldscheider, N., Lambrakis, N., De Vita, P., Xiao, Q., Yu, S., Iacurto, S., Coda, S., McCormack, T., Allocca, V., Darling, W., D’Alessandro, W., Guo, X., Hu, Y., Wang, Z., Kaminsky, E., Faimon, J., Lang, M., Pracný, P., and Hartmann, A."
+  title: "The WoKaS-Iso Database: Workflow for a Global Compilation of Oxygen-18 and Deuterium Records in Karst Springs and Cave Drip Water for Enhanced Understanding of Karst Systems"
+  journal: null
+  citation: "In Revision"
+  doi: null
+  pdf: null
+
+- year: 2026
+  status: "in_review"
+  lead: "external"
+  authors: "Stewart, B., et al."
+  title: "Small streams experience less persistent but more intense heatwaves than large rivers"
+  journal: null
+  citation: "In Review"
+  doi: null
+  pdf: null
+
+- year: 2026
+  status: "in_review"
+  lead: "external"
+  authors: "Liu, H., Peng, B., Ma, Z., Li, L., Speir, S. L., <strong>Husic, A.</strong>, Sivapalan, M., Guan, K., Pan, M., Zhao, Q., Wang, Y., Jia, M., and Yang, J.,"
+  title: "Nitrate availability and hydrologic connectivity coregulate event-scale concentration contrast and C–Q patterns"
+  journal: null
+  citation: "In Review"
+  doi: null
+  pdf: null
+
+- year: 2026
+  status: "in_review"
+  lead: "external"
+  authors: "Hale, C., Hotchkiss, R., Shelley, J., <strong>Husic, A.</strong>, Minear, T., and Mansfield, M."
+  title: "Cost-effectiveness model for reservoir sediment management economics"
+  journal: null
+  citation: "In Review"
+  doi: null
+  pdf: null
+
+- year: 2026
+  status: "published"
+  lead: "lab"
+  authors: "<u>Nishchal, S.</u> and <strong>Husic, A.</strong>"
+  title: "U.S. rivers are transporting more suspended sediment, often in less time"
+  journal: "Communications Earth & Environment"
+  citation: "In Press"
+  doi: "https://doi.org/10.1038/s43247-026-03847-8"
+  pdf: null
+
+- year: 2026
+  status: "published"
+  lead: "lab"
+  authors: "<u>Chen, C.</u> and <strong>Husic, A.</strong>"
+  title: "Streamflow composition in U.S. rivers is shifting toward recent precipitation"
+  journal: "Communications Earth & Environment"
+  citation: "In Press"
+  doi: "https://doi.org/10.1038/s43247-026-03788-2"
+  pdf: null
+
+- year: 2026
+  status: "published"
+  lead: "lab"
+  authors: "<u>Appel, E.</u>, Enderami, A., Sutley, E., and <strong>Husic, A.</strong>"
+  title: "Disproportionate exposure to extreme floods in historically redlined U.S. communities"
+  journal: "Nature Communications"
+  citation: "In Press"
+  doi: "https://doi.org/10.1038/s41467-026-76024-2"
+  pdf: null
+
+- year: 2026
+  status: "published"
+  lead: "external"
+  authors: "Araki, R., Holt, A., Hammond, J., <strong>Husic, A.</strong>, Coxon, G., and McMillan, H."
+  title: "Continental-scale prediction of hydrologic signatures and processes"
+  journal: "Hydrology and Earth System Sciences"
+  citation: "30, 3647–3673"
+  doi: "https://doi.org/10.5194/hess-30-3647-2026"
+  pdf: "Araki-et-al-2026-HESS.pdf"
+
+- year: 2026
+  status: "published"
+  lead: "external"
+  authors: "Sando, R., Jaeger, K., Kelleher, C., Hammond, J., Christensen, J., Segura, C., Golden, H., Cheng, F., <strong>Husic, A.</strong>, Jones, N., Lane, C., Li, L., Mahoney, T., McMillan, H., Price, A., Seybold, E., Ward, A., and Zimmer, M."
+  title: "Streamflow and Surface-water Presence Data Availability Across the Conterminous United States (CONUS): A Review for Headwater Systems"
+  journal: "Hydrological Processes"
+  citation: "40(5), e70572"
+  doi: "https://doi.org/10.1002/hyp.70572"
+  pdf: "Sando-et-al-2026-HP.pdf"
+
+- year: 2026
+  status: "published"
+  lead: "external"
+  authors: "Li, J., Wang, D., Wang, G., Ma, J., Deng, Z., Song, C., Guo, L., Li, X., <strong>Husic, A.</strong>, and Wang, W."
+  title: "Cryo-FSC: A Dynamic Functional Connectivity Index Reveals Spatio-Temporal Shifts in Sediment Transport in the Permafrost-Dominated River Systems"
+  journal: "Water Resources Research"
+  citation: "62(5), e2025WR043141"
+  doi: "https://doi.org/10.1029/2025WR043141"
+  pdf: "Li-et-al-2026-WRR.pdf"
+
+- year: 2026
+  status: "published"
+  lead: "lab"
+  authors: "Layzell A., <u>Lloyd, C.</u>, <u>Percich, A.</u>, Harris, T., Ketterer, M., and <strong>Husic, A.</strong>"
+  title: "Event-driven shifts in river and reservoir sediment sources: Cottonwood River and John Redmond Reservoir, USA"
+  journal: "Earth Surface Processes and Landforms"
+  citation: "51(4), e70289"
+  doi: "https://doi.org/10.1002/esp.70289"
+  pdf: "Layzell-et-al-2026-ESPL.pdf"
+
+- year: 2026
+  status: "published"
+  lead: "external"
+  authors: "Brandão, A., <strong>Husic, A.</strong>, Almagro, A., Schwamback, D., and Oliveira, P."
+  title: "Explaining spatial variation and catchment characteristics thresholds in streamflow response"
+  journal: "Journal of Hydrology"
+  citation: "674, 135492"
+  doi: "https://doi.org/10.1016/j.jhydrol.2026.135492"
+  pdf: "Brandao-et-al-2026-JH.pdf"
+
+- year: 2026
+  status: "published"
+  lead: "external"
+  authors: "Valencia, S., <u>Marín, D.</u>, Gómez, D., Echavarría-Porras, V., Mejia-Sepulveda, J., <strong>Husic, A.</strong>, Sullivan, S., Hoyos, N., Villegas, J., Harrison, L., and Green, J."
+  title: "Improvements and limitations of the new Climate Hazards Center Infrared Precipitation with Stations (CHIRPSv3) dataset: Insights from multiple spatio-temporal scales in Colombia"
+  journal: "Atmospheric Research"
+  citation: "338, 108971"
+  doi: "https://doi.org/10.1016/j.atmosres.2026.108971"
+  pdf: "Valencia-et-al-2026-AR.pdf"
+
+- year: 2026
+  status: "published"
+  lead: "external"
+  authors: "Riddle, B., Fox, J., Ford, W., Kim, M., <strong>Husic, A.</strong>, Backus, J., and Pollock, E."
+  title: "Continuum of denitrification to end-member controls on nitrate isotopic ratios: evidence from meta-analyses and a six-year record of seasonality from Kentucky, USA"
+  journal: "Science of the Total Environment"
+  citation: "1029, 181715"
+  doi: "https://doi.org/10.1016/j.scitotenv.2026.181715"
+  pdf: "Riddle-et-al-2026-STOTEN.pdf"
+
+- year: 2026
+  status: "published"
+  lead: "external"
+  authors: "Grant, S., Bhide, S., Spiesman, A., Misra, S., Rippy, M., Galik, C., Birkland, T., Schenk, T., Kaushal, S., Vikesland, P., Knocke, W., Hotchkiss, E., <strong>Husic, A.</strong>, Post, H., Coneway, C., Prelewicz, G., Owsenek, B., Steglitz, B., Laursen, B., and Rowles, K."
+  title: "Social-ecological-technological drivers of freshwater salinization in the Occoquan Reservoir, United States"
+  journal: "Communications Earth & Environment"
+  citation: "7, 133"
+  doi: "https://doi.org/10.1038/s43247-025-03152-w"
+  pdf: "Grant-et-al-2026-CEE.pdf"
+
+- year: 2026
+  status: "published"
+  lead: "external"
+  authors: "Lane, C., D’Amico, E., Christensen, J., Golden, H., Cheng, F., Hammond, J., <strong>Husic, A.</strong>, Jaeger, K., Jones, N., Kelleher, C., Li, L., Mahoney, T., McMillan, H., Price, A., Sando, R., Segura, C., Seybold, E., Ward, A., and Zimmer, M."
+  title: "Identifying Headwater Streams across the Conterminous United States"
+  journal: "Ecosystems"
+  citation: "29, 26"
+  doi: "https://doi.org/10.1007/s10021-025-01041-z"
+  pdf: "Lane-et-al-2026-ECO.pdf"
+
+- year: 2026
+  status: "published"
+  lead: "external"
+  authors: "Bhide, S., Grant, S., Benettin, P., Rippy, M., Monofy, A., Furst, K., Shelton, S., Kaushal, S., Misra, S., Vikesland, P., Hotchkiss, E., Spiesman, A., Prelewicz, G., Schenk, T., Post, H., Alvi, D., Steglitz, B., and <strong>Husic, A.</strong>"
+  title: "Transit times link pollution sources to drinking water quality in a “One Water” system"
+  journal: "Water Research"
+  citation: "288, 124652"
+  doi: "https://doi.org/10.1016/j.watres.2025.124652"
+  pdf: "Bhide-et-al-2026-WR.pdf"
+
+- year: 2025
+  status: "published"
+  lead: "lab"
+  authors: "<u>Shrestha, S.</u>, Hotchkiss, R., Minear, T., Shelley, J., and <strong>Husic, A.</strong>"
+  title: "Sediment storage behind low-head dams: assessing potential contribution to reservoir sedimentation in Kansas, USA"
+  journal: "River Research and Applications"
+  citation: "41, 2177-2188"
+  doi: "https://doi.org/10.1002/rra.70032"
+  pdf: "Shrestha-et-al-2025-RRA.pdf"
+
+- year: 2025
+  status: "published"
+  lead: "lab"
+  authors: "<u>Pandit, A.</u>, Golden, H., Christensen, J., Lane, C. R., and <strong>Husic, A.</strong>"
+  title: "Deep learning prediction and interpretation of riverine nitrate export across the Mississippi River Basin"
+  journal: "Water Resources Research"
+  citation: "61(8), e2024WR039207"
+  doi: "https://doi.org/10.1029/2024WR039207"
+  pdf: "Pandit-et-al-2025-WRR.pdf"
+
+- year: 2025
+  status: "published"
+  lead: "lab"
+  authors: "<strong>Husic, A.</strong>, Hammond, J., Price, A., and Roundy, J."
+  title: "Interrogating process deficiencies in large-scale hydrologic models with interpretable machine learning"
+  journal: "Hydrology and Earth System Sciences"
+  citation: "29(18), 4457–4472"
+  doi: "https://doi.org/10.5194/hess-29-4457-2025"
+  pdf: "Husic-et-al-2025-HESS.pdf"
+
+- year: 2025
+  status: "published"
+  lead: "lab"
+  authors: "<u>Marin, D.</u>, Grant, S., Shantanu, B., Rippy, G., Gomez-Velez, J., Brent, R., Kaushal, S., Post, H., Shelton, S., Misra, S., Hotchkiss, E., Monofy, A., Alvi, D., Schmitz, B., Curtis, S., Davis, C., Vikesland, P., and <strong>Husic, A.</strong>"
+  title: "Ion Clusters Reveal the Sources, Impacts, and Drivers of Freshwater Salinization"
+  journal: "Environmental Science and Technology"
+  citation: "59(27), 14053–14062"
+  doi: "https://doi.org/10.1021/acs.est.5c04512"
+  pdf: "Marin-et-al-2025-EST.pdf"
+
+- year: 2025
+  status: "published"
+  lead: "external"
+  authors: "Li, J., Wang, G., Ma, J., Huang, P., Song, C., Sun, S., Guo, L., Li, K., Wang, H., Li, D., and <strong>Husic, A.</strong>"
+  title: "Structural Connectivity Shaped by Cryospheric Degradation Modulates Sediment Transport Dynamics in High Mountain Asia"
+  journal: "Water Resources Research"
+  citation: "61(6), e2024WR038654"
+  doi: "https://doi.org/10.1029/2024WR038654"
+  pdf: "Li-et-al-2025-WRR.pdf"
+
+- year: 2025
+  status: "published"
+  lead: "external"
+  authors: "Spellman, P., <strong>Husic, A.</strong>, and Hasenmueller, E."
+  title: "Storm-induced solute dynamics and hysteresis behavior in an eogenetic karst aquifer"
+  journal: "Hydrological Processes"
+  citation: "39(4), e70111"
+  doi: "https://doi.org/10.1002/hyp.70111"
+  pdf: "Spellman-et-al-2025-HP.pdf"
+
+- year: 2025
+  status: "published"
+  lead: "lab"
+  authors: "<u>Pandit, A.</u>, <u>Hogan, S.</u>, Mahoney, D., Ford, W., Fox, J., Wellen, C., and <strong>Husic, A.</strong>"
+  title: "Establishing performance criteria for evaluating watershed-scale sediment and nutrient models at fine temporal scales"
+  journal: "Water Research"
+  citation: "274, 123156"
+  doi: "https://doi.org/10.1016/j.watres.2025.123156"
+  pdf: "Pandit-et-al-2025-WR.pdf"
+
+- year: 2025
+  status: "published"
+  lead: "external"
+  authors: "Golden, H., Christensen, J., McMillan, H., Kelleher, C., Lane, C., <strong>Husic, A.</strong>, Li, L., Ward, A., Hammond, J., Seybold, E., Jaeger, K., Zimmer, M., Sando, R., Jones, N., Segura, C., Mahoney, T., Price, A., and Cheng, F."
+  title: "Advancing the Science of Headwater Streamflow for Global Water Protection"
+  journal: "Nature Water"
+  citation: "3(1), 16–26"
+  doi: "https://doi.org/10.1038/s44221-024-00351-1"
+  pdf: "Golden-et-al-2025-NAT-WAT.pdf"
+
+- year: 2025
+  status: "published"
+  lead: "external"
+  authors: "Riddle, B., Fox, J., Ford, W., <strong>Husic, A.</strong>, and Pollock, E."
+  title: "Fourteen-year fluvial sediment record shows non-conservativeness of organic tracers: recommendations for sediment fingerprinting"
+  journal: "Hydrological Processes"
+  citation: "39(1), e70054"
+  doi: "https://doi.org/10.1002/hyp.70054"
+  pdf: "Riddle-et-al-2025-HP.pdf"
+
+- year: 2025
+  status: "published"
+  lead: "external"
+  authors: "Bettel, L., Fox, J., <strong>Husic, A.</strong>, Mahoney, T., Martin, A., Zhu, J., Tobin, B., Al-Aamery, N., Osborne, C., Riddle, B., and Pollock E."
+  title: "Hydrologic pathways and baseflow contributions, and not the proximity of sediment sources, determine the shape of sediment hysteresis curves: Theory development and application in a karst basin in Kentucky USA"
+  journal: "Journal of Hydrology"
+  citation: "649, 132300"
+  doi: "https://doi.org/10.1016/j.jhydrol.2024.132300"
+  pdf: "Bettel-et-al-2025-JH.pdf"
+
+- year: 2024
+  status: "published"
+  lead: "external"
+  authors: "Clune, J., Cravotta, C., <strong>Husic, A.</strong>, Abraham, H., and Schmidt, K."
+  title: "Complex hydrology and variability of nitrogen sources in a karst watershed"
+  journal: "Journal of Environmental Quality"
+  citation: "53, 492-507"
+  doi: "https://doi.org/10.1002/jeq2.20578"
+  pdf: "Clune-et-al-2024-JEQ.pdf"
+
+- year: 2024
+  status: "published"
+  lead: "lab"
+  authors: "<u>Zarnaghsh, A.</u>, Kelly, M., Burgin, A., and <strong>Husic, A.</strong>"
+  title: "Revealing nitrate uptake and dispersion dynamics using high-frequency sensors and two-dimensional modeling in a large river system"
+  journal: "Advances in Water Resources"
+  citation: "187, 104693"
+  doi: "https://doi.org/10.1016/j.advwatres.2024.104693"
+  pdf: "Zarnaghsh-et-al-2024-ADWR.pdf"
+
+- year: 2024
+  status: "published"
+  lead: "lab"
+  authors: "<u>Rider, Z.</u>, <u>Percich, A.</u>, Hiripitiyage, Y., Harris, T., Sturm, B., Wilson, A., Pollock, E., Beaver, J., and <strong>Husic, A.</strong>"
+  title: "Drivers of cyanotoxin and taste-and-odor compound presence within the benthic algae of human-disturbed rivers"
+  journal: "Water Research"
+  citation: "253, 121357"
+  doi: "https://doi.org/10.1016/j.watres.2024.121357"
+  pdf: "Rider-et-al-2024-WR.pdf"
+
+- year: 2023
+  status: "published"
+  lead: "external"
+  authors: "<u>Michalek. A.</u>, Villarini, G., and <strong>Husic, A.</strong>"
+  title: "Climate change projected to impact structural hillslope connectivity at the global scale"
+  journal: "Nature Communications"
+  citation: "14, 6788"
+  doi: "https://doi.org/10.1038/s41467-023-42384-2"
+  pdf: "Michalek-et-al-2023-NAT-COMS.pdf"
+
+- year: 2023
+  status: "published"
+  lead: "lab"
+  authors: "<u>Zarnaghsh, A.</u> and <strong>Husic, A.</strong>"
+  title: "An index for inferring dominant transport pathways of solutes and sediment: assessing land use change with high-frequency conductivity and turbidity sensor data"
+  journal: "Science of the Total Environment"
+  citation: "894, 164931"
+  doi: "https://doi.org/10.1016/j.scitotenv.2023.164931"
+  pdf: "Zarnaghsh-Husic-2023-STOTEN.pdf"
+
+- year: 2023
+  status: "published"
+  lead: "lab"
+  authors: "<u>McVey, Z.</u>, Michalek A., Mahoney, T., and <strong>Husic, A.</strong>"
+  title: "Urbanization as a limiter and catalyst of watershed-scale sediment transport: insights from probabilistic connectivity modeling"
+  journal: "Science of the Total Environment"
+  citation: "894, 165093"
+  doi: "https://doi.org/10.1016/j.scitotenv.2023.165093"
+  pdf: "McVey-et-al-2023-STOTEN.pdf"
+
+- year: 2023
+  status: "published"
+  lead: "lab"
+  authors: "<strong>Husic, A.</strong>, Fox, J., Clare, E., Mahoney, T., and <u>Zarnaghsh, A.</u>"
+  title: "Nitrate hysteresis as a tool for revealing storm-event dynamics and improving water quality model performance"
+  journal: "Water Resources Research"
+  citation: "59(1), e2022WR033180"
+  doi: "https://doi.org/10.1029/2022WR033180"
+  pdf: "Husic-et-al-2023-WRR.pdf"
+
+- year: 2023
+  status: "published"
+  lead: "external"
+  authors: "Gerlitz, M., Fox, J., Ford, W., <strong>Husic, A.</strong>, Mahoney, T., Armstead, M., Hendricks, S., Crain, A., Backus, J., Pollock, E., Wei, R., Bo, T., Riddle, B., and White, D."
+  title: "Nitrate sensors suggest soil-plant processes produce three distinct seasonal patterns of nitrate in the Ohio River Basin"
+  journal: "Journal of the American Water Resources Association"
+  citation: "59(4), 635-651"
+  doi: "https://doi.org/10.1111/1752-1688.13107"
+  pdf: "Gerlitz-et-al-2023-JAWRA.pdf"
+
+- year: 2022
+  status: "published"
+  lead: "lab"
+  authors: "<strong>Husic, A.</strong> and <u>Michalek, A.</u>"
+  title: "Structural hillslope connectivity is driven by tectonics more than climate and modulates hydrologic extremes and benefits"
+  journal: "Geophysical Research Letters"
+  citation: "49(15), e2022GL099898"
+  doi: "https://doi.org/10.1029/2022GL099898"
+  pdf: "Husic-Michalek-2022-GRL.pdf"
+  note: "*Selected by Editors as a Research Spotlight."
+
+- year: 2022
+  status: "published"
+  lead: "lab"
+  authors: "<u>Percich, A.</u>, <strong>Husic, A.</strong>, and Ketterer, M."
+  title: "Plutonium isotopes: an effective tool for fluvial sediment sourcing in urbanized catchments"
+  journal: "Geophysical Research Letters"
+  citation: "49(2), e2021GL094497"
+  doi: "https://doi.org/10.1029/2021GL094497"
+  pdf: "Percich-et-al-2022-GRL.pdf"
+
+- year: 2022
+  status: "published"
+  lead: "lab"
+  authors: "<strong>Husic, A.</strong>, Al Aamery, N., and Fox, J."
+  title: "Simulating hydrologic pathway contributions in fluvial and karst settings: an evaluation of conceptual, physically-based, and deep learning modeling approaches"
+  journal: "Journal of Hydrology X"
+  citation: "17, 100134"
+  doi: "https://doi.org/10.1016/j.hydroa.2022.100134"
+  pdf: "Husic-et-al-2022-JH-x.pdf"
+
+- year: 2022
+  status: "published"
+  lead: "external"
+  authors: "Bettel, L., Fox, J., <strong>Husic, A.</strong>, Zhu, J., Al-Aamery, N., Mahoney, T., and Gold-McCoy, A."
+  title: "Sediment transport investigation in a karst aquifer hypothesizes controls on internal versus external sediment origin and saturation impact on hysteresis"
+  journal: "Journal of Hydrology"
+  citation: "613, 128391"
+  doi: "https://doi.org/10.1016/j.jhydrol.2022.128391"
+  pdf: "Bettel-et-al-2022-JH.pdf"
+
+- year: 2021
+  status: "published"
+  lead: "lab"
+  authors: "<u>Michalek, A.</u>, <strong>Husic, A.</strong>, Roundy, J., and Hansen, A."
+  title: "Assessment of climatic and anthropogenic controls on bridge deck drainage and sediment removal"
+  journal: "Water"
+  citation: "13(24), 3556"
+  doi: "https://doi.org/10.3390/w13243556"
+  pdf: "Michalek-et-al-2021-WATER.pdf"
+
+- year: 2021
+  status: "published"
+  lead: "lab"
+  authors: "<u>Zarnaghsh, A.</u> and <strong>Husic, A.</strong>"
+  title: "Degree of anthropogenic land disturbance controls fluvial sediment hysteresis"
+  journal: "Environmental Science and Technology"
+  citation: "55(20), 13737–13748"
+  doi: "https://doi.org/10.1021/acs.est.1c00740"
+  pdf: "Zarnaghsh-Husic-2021-EST.pdf"
+
+- year: 2021
+  status: "published"
+  lead: "external"
+  authors: "Kelly, M., Zeglin, L., <strong>Husic, A.</strong>, and Burgin, A."
+  title: "High Supply, High Demand: A Unique Nutrient Addition Decouples Nitrate Uptake and Metabolism in a Large River"
+  journal: "Journal of Geophysical Research: Biogeosciences"
+  citation: "126(12), e2021JG006469"
+  doi: "https://doi.org/10.1029/2021JG006469"
+  pdf: "Kelly-et-al-2021-JGR-BGS.pdf"
+
+- year: 2021
+  status: "published"
+  lead: "lab"
+  authors: "<strong>Husic, A.</strong>, Fox, J., Al-Aamery, N., Pollock, E., Ford, W., Agouridis, C., and Backus, J."
+  title: "Seasonality of recharge drives spatiotemporal nitrate removal in a karst conduit as evidenced by sediment nitrogen isotopes"
+  journal: "Journal of Geophysical Research: Biogeosciences"
+  citation: "126(10), e2021JG006454"
+  doi: "https://doi.org/10.1029/2021JG006454"
+  pdf: "Husic-et-al-2021-JGR-BGS.pdf"
+
+- year: 2021
+  status: "published"
+  lead: "lab"
+  authors: "<u>Michalek, A.</u>, <u>Zarnaghsh, A.</u>, and <strong>Husic, A.</strong>"
+  title: "Modeling linkages between erosion and connectivity in an urbanizing landscape"
+  journal: "Science of the Total Environment"
+  citation: "764, 144255"
+  doi: "https://doi.org/10.1016/j.scitotenv.2020.144255"
+  pdf: "Michalek-et-al-2021-STOTEN.pdf"
+
+- year: 2021
+  status: "published"
+  lead: "external"
+  authors: "Al Aamery, N., Adams, E., Fox, J., <strong>Husic, A.</strong>, Gerlitz, M., Agouridis, C., and Zhu, J."
+  title: "Pathway connectivity in an epigenetic fluviokarst system: insight from a numerical modelling study in Kentucky USA"
+  journal: "Journal of Hydrology"
+  citation: "593, 125844"
+  doi: null
+  pdf: "Al-Aamery-et-al-2021-JH.pdf"
+
+- year: 2020
+  status: "published"
+  lead: "lab"
+  authors: "<strong>Husic, A.</strong>, Fox, J., Mahoney, T., Gerlitz, M., Pollock, E., and Backus, J."
+  title: "Optimal Transport for Assessing Nitrate Source-Pathway Connectivity"
+  journal: "Water Resources Research"
+  citation: "56 (10), e2020WR027446"
+  doi: "https://doi.org/10.1029/2020WR027446"
+  pdf: "Husic-et-al-2020b-WRR.pdf"
+
+- year: 2020
+  status: "published"
+  lead: "lab"
+  authors: "<strong>Husic, A.</strong>, Fox, J., Adams, E., Pollock, E., Ford, W., Agouridis, C., and Backus, J."
+  title: "Quantification of nitrate removal in karst conduits using stable isotopes and numerical modeling"
+  journal: "Water Research"
+  citation: "(170), 115348"
+  doi: "https://doi.org/10.1016/j.watres.2019.115348"
+  pdf: "Husic-et-al-2020a-WR.pdf"
+
+- year: 2019
+  status: "published"
+  lead: "external"
+  authors: "Ford, W., <strong>Husic, A.</strong>, Fogle, A., and Taraba, J."
+  title: "Long-term assessment of nutrient flow pathway dynamics and in-stream fate in a temperate karst agroecosystem watershed"
+  journal: "Hydrological Processes"
+  citation: "33 (11), 1610-1628"
+  doi: "https://doi.org/10.1002/hyp.13427"
+  pdf: "Ford-et-al-2019-HP.pdf"
+
+- year: 2019
+  status: "published"
+  lead: "lab"
+  authors: "<strong>Husic, A.</strong>, Fox, J., Ford, W., Agouridis, C., Currens, J., and Backus, J."
+  title: "Nitrate pathways, processes, and timing in an agricultural karst system: development and application of a numerical model"
+  journal: "Water Resources Research"
+  citation: "55(3), 2079-2103"
+  doi: "https://doi.org/10.1029/2018WR023703"
+  pdf: "Husic-et-al-2019b-WRR.pdf"
+
+- year: 2019
+  status: "published"
+  lead: "external"
+  authors: "Ghesemi, A., Fox, J., and <strong>Husic, A.</strong>"
+  title: "Predicting macroturbulence energy and timescales for open channel flow over a gravel bed: experimental results and scaling laws"
+  journal: "Geomorphology"
+  citation: "322, 122-137"
+  doi: "https://doi.org/10.1016/j.geomorph.2019.02.006"
+  pdf: "Ghesemi-et-al-2019-GEO.pdf"
+
+- year: 2019
+  status: "published"
+  lead: "lab"
+  authors: "<strong>Husic, A.</strong>, Fox, J., Adams, E., Backus, J., Pollock, E., Ford, W., and Agouridis, C."
+  title: "Inland impacts of atmospheric river and tropical cyclone extremes on nitrate transport and stable isotope measurements"
+  journal: "Environmental Earth Science"
+  citation: "78(36)"
+  doi: "https://doi.org/10.1007/s12665-018-8018-x"
+  pdf: "Husic-et-al-2019a-EES.pdf"
+
+- year: 2018
+  status: "published"
+  lead: "external"
+  authors: "Jensen, A., Ford, W., Fox, J., and <strong>Husic, A.</strong>"
+  title: "Improving water quality models using stable isotope tracers: a review and synthesis"
+  journal: "Transactions of the American Society of Agricultural and Biological Engineers"
+  citation: "61, 139-157"
+  doi: "https://doi.org/10.13031/trans.12545"
+  pdf: "Jensen-et-al-2018-ASABE.pdf"
+
+- year: 2017
+  status: "published"
+  lead: "lab"
+  authors: "<strong>Husic, A.</strong>, Fox, J., Agouridis, C., Currens, J., Ford, W., and Taylor, C."
+  title: "Sediment carbon source, fate, and transport in a fluviokarst watershed (Part 1): conceptual model development"
+  journal: "Journal of Hydrology"
+  citation: "549, 179-193"
+  doi: "https://doi.org/10.1016/j.jhydrol.2017.03.052"
+  pdf: "Husic-et-al-2017a-JH.pdf"
+
+- year: 2017
+  status: "published"
+  lead: "lab"
+  authors: "<strong>Husic, A.</strong>, Fox, J., Ford, W., Agouridis, C., Currens, J., and Taylor, C."
+  title: "Sediment carbon source, fate, and transport in a fluviokarst watershed (Part 2): numerical model development and application"
+  journal: "Journal of Hydrology"
+  citation: "549, 208-219"
+  doi: "https://doi.org/10.1016/j.jhydrol.2017.03.059"
+  pdf: "Husic-et-al-2017b-JH.pdf"
