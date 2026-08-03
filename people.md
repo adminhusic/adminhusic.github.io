@@ -2,6 +2,8 @@
 layout: default
 title: People
 subtitle: "The researchers behind the work, at Virginia Tech and University of Kansas."
+description: "Meet the Dynamic Connectivity Lab: Admin Husic's research group at Virginia Tech, plus alumni from Virginia Tech and the University of Kansas."
+image: /assets/img/husic-headshot.jpg
 ---
 
 <div class="section">
@@ -55,9 +57,9 @@ subtitle: "The researchers behind the work, at Virginia Tech and University of K
   {% assign postdocs = site.data.people.alumni | where: "role", "Postdoctoral Scholar" | sort: "last_year" | reverse %}
   {% assign doctoral = site.data.people.alumni | where: "role", "Doctoral Student" | sort: "last_year" | reverse %}
   {% assign masters = site.data.people.alumni | where: "role", "Master's Student" | sort: "last_year" | reverse %}
-  {% assign undergrads = site.data.people.alumni | where: "role", "Undergraduate Researcher" | sort: "last_year" | reverse %}
+  {% assign undergrads = site.data.people.alumni | where: "role", "Undergraduate Student" | sort: "last_year" | reverse %}
   {% include alumni-group.html group=postdocs title="Postdoctoral Fellows" %}
   {% include alumni-group.html group=doctoral title="Doctoral Students" %}
   {% include alumni-group.html group=masters title="Master's Students" %}
-  {% include alumni-group.html group=undergrads title="Undergraduate Researchers" %}
+  {% include alumni-group.html group=undergrads title="Undergraduate Students" %}
 </div>

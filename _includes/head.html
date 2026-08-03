@@ -1,7 +1,31 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }} · {{ site.tagline }}{% endif %}</title>
-<meta name="description" content="{{ page.description | default: site.description }}">
+{% seo title=false %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.title }}",
+  "alternateName": "Admin Husic, Ph.D.",
+  "jobTitle": "Associate Professor",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "Virginia Tech",
+    "department": {
+      "@type": "EducationalOrganization",
+      "name": "Charles E. Via, Jr. Department of Civil and Environmental Engineering"
+    }
+  },
+  "email": "mailto:{{ site.email }}",
+  "url": "{{ '/' | absolute_url }}",
+  "sameAs": [
+    "https://orcid.org/{{ site.orcid }}",
+    "{{ site.linkedin }}",
+    "{{ site.vt_profile }}"
+  ]
+}
+</script>
 <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

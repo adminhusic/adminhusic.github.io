@@ -36,7 +36,7 @@ alumni:
   - name: "Sai Kiran Kuntla"
     role: "Postdoctoral Scholar"
     last_year: 2026
-    note: "STREAM high-frequency water quality sensor database."
+    note: "Harmonizing fragmented high-frequency water quality sensor data."
 
   - name: "Amirreza Zarnaghsh"
     role: "Doctoral Student"
@@ -59,72 +59,72 @@ alumni:
     role: "Master's Student"
     last_year: 2025
     note: "Deep learning for nitrate export and watershed model benchmarking."
-  - name: "Alexander Michalek"
-    role: "Master's Student"
-    last_year: 2020
-    note: "Sediment erosion-connectivity mapping in urbanizing landscapes."
-  - name: "Zane Rider"
-    role: "Master's Student"
-    last_year: 2022
-    note: "Cyanotoxins and taste-and-odor compounds in benthic algae."
   - name: "Zack McVey"
     role: "Master's Student"
     last_year: 2023
     note: "Land use impacts on dynamic sediment connectivity."
-
+  - name: "Zane Rider"
+    role: "Master's Student"
+    last_year: 2022
+    note: "Cyanotoxins and taste-and-odor compounds in benthic algae."
+  - name: "Alexander Michalek"
+    role: "Master's Student"
+    last_year: 2020
+    note: "Sediment erosion-connectivity mapping in urbanizing landscapes."
+    
   - name: "Laura VanderMeulen"
-    role: "Undergraduate Researcher"
+    role: "Undergraduate Student"
     last_year: 2024
     note: "Meta-analysis of sediment fingerprinting applications."
   - name: "Avery Mohn"
-    role: "Undergraduate Researcher"
+    role: "Undergraduate Student"
     last_year: 2024
     note: "Microplastics in stormwater and fluvial sediment."
   - name: "Elizabeth Appel"
-    role: "Undergraduate Researcher"
+    role: "Undergraduate Student"
     last_year: 2024
     note: "Racial equity of flood exposure in historically redlined communities."
   - name: "Jack Respelliers"
-    role: "Undergraduate Researcher"
+    role: "Undergraduate Student"
     last_year: 2024
     note: "Sediment fingerprinting data collection."
   - name: "Austin Gardiner"
-    role: "Undergraduate Researcher"
+    role: "Undergraduate Student"
     last_year: 2022
     note: "Sediment fingerprinting data collection."
   - name: "Aaron Tuschhoff"
-    role: "Undergraduate Researcher"
+    role: "Undergraduate Student"
     last_year: 2022
     note: "Sediment fingerprinting data collection."
   - name: "Sarah Hogen"
-    role: "Undergraduate Researcher"
+    role: "Undergraduate Student"
     last_year: 2022
     note: "Synthesis of water quality model performance."
   - name: "Devin Gouger"
-    role: "Undergraduate Researcher"
+    role: "Undergraduate Student"
     last_year: 2021
     note: "Sediment fingerprinting data collection."
   - name: "Logan Wilson"
-    role: "Undergraduate Researcher"
+    role: "Undergraduate Student"
     last_year: 2020
     note: "Hydrologic modeling along an urbanization gradient."
   - name: "Madeline Merckling"
-    role: "Undergraduate Researcher"
+    role: "Undergraduate Student"
     last_year: 2020
     note: "Sediment fingerprinting data collection."
   - name: "Luke Brown"
-    role: "Undergraduate Researcher"
+    role: "Undergraduate Student"
     last_year: 2020
     note: "High-frequency water quality sensing platforms."
   - name: "Alexandria Depew"
-    role: "Undergraduate Researcher"
+    role: "Undergraduate Student"
     last_year: 2020
     note: "High-frequency water quality sensing platforms."
   - name: "Cheyenne Hillman"
-    role: "Undergraduate Researcher"
+    role: "Undergraduate Student"
     last_year: 2019
     note: "Sediment fingerprinting data collection."
   - name: "Savannah Smith"
-    role: "Undergraduate Researcher"
+    role: "Undergraduate Student"
     last_year: 2019
     note: "Sediment fingerprinting data collection."

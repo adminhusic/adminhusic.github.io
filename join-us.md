@@ -2,6 +2,8 @@
 layout: default
 title: Join Us
 subtitle: "We're growing at the Occoquan Watershed Monitoring Laboratory, Virginia Tech."
+description: "Join the Dynamic Connectivity Lab: Admin Husic is recruiting PhD students, master's students, and postdoctoral researchers at Virginia Tech's Occoquan Watershed Monitoring Laboratory."
+image: /assets/img/husic-headshot.jpg
 ---
 
 <div class="intro-band">

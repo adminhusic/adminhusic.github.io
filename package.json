@@ -1,0 +1,12 @@
+{
+  "name": "husic-site-automation",
+  "private": true,
+  "type": "module",
+  "description": "CI-only scripts for the Jekyll site (ORCID sync). Not part of the built site itself.",
+  "scripts": {
+    "sync-orcid": "node .github/scripts/sync-orcid.mjs"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

@@ -11,10 +11,11 @@ orcid: "0000-0002-4225-2252"
 vt_profile: "https://www.webapps.cee.vt.edu/index.php?category=people&pagetype=bio&do=getprofile&user=husic.html"
 linkedin: "https://www.linkedin.com/in/admin-husic/"
 
-# Leave url/baseurl blank for a GitHub user-page repo (adminhusic.github.io) served at the domain root.
-# If this instead lives in a project-page repo (e.g. github.com/adminhusic/faculty-site),
-# set baseurl to "/faculty-site" so links resolve correctly on GitHub Pages.
-url: ""
+# Used by jekyll-seo-tag for canonical URLs, Open Graph/Twitter card tags, and
+# structured data -- these need a real absolute URL to generate correctly.
+# baseurl stays blank: this is a GitHub user-page repo (adminhusic.github.io)
+# served at the domain root, not a project-page repo needing a path prefix.
+url: "https://adminhusic.github.io"
 baseurl: ""
 
 # The github-pages gem defaults to `theme: jekyll-theme-primer` when this key is
@@ -30,6 +31,7 @@ kramdown:
 
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 exclude:
   - Gemfile
@@ -44,10 +46,10 @@ exclude:
 nav:
   - title: Home
     path: /
-  - title: Research
-    path: /research/
   - title: People
     path: /people/
+  - title: Research
+    path: /research/
   - title: Publications
     path: /publications/
   - title: Teaching

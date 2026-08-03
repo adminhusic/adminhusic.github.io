@@ -2,6 +2,8 @@
 layout: default
 title: Research
 subtitle: How human activity and a changing climate reshape the transport and connectivity of water, sediment, and nutrients across Earth's surface.
+description: "Admin Husic's research at Virginia Tech on hydrology, sediment transport, and machine learning for water resources — how human activity and climate change reshape water, sediment, and nutrient connectivity."
+image: /assets/img/husic-headshot.jpg
 ---
 
 My group works at the intersection of hydrology, biogeochemistry, and data science. We combine
