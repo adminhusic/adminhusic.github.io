@@ -85,8 +85,8 @@ catchments to the continental scale.
       </li>
       <li class="area-row">
         <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M12 3s6.5 8 6.5 12.5a6.5 6.5 0 0 1-13 0C5.5 11 12 3 12 3Z"/>
-          <path d="M9 15.5 12 13l3 2.5"/>
+          <circle cx="9" cy="12" r="6"/>
+          <circle cx="15" cy="12" r="6"/>
         </svg>
         <div>
           <h3>GCR: Freshwater Salinization</h3>
@@ -108,7 +108,9 @@ catchments to the continental scale.
       </li>
       <li class="area-row">
         <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M3 13h2.5l1.5-5 2.5 10 2-7 1.5 3.5H20"/>
+          <path d="M12 2v15"/>
+          <path d="M12 5h2.5M12 8.5h2.5M12 12h2.5"/>
+          <path d="M3 20c2-1.5 3.5 1.5 5.5 0s3.5-1.5 5.5 0 3.5 1.5 5.5 0"/>
         </svg>
         <div>
           <h3>Broad Run Watershed Monitoring Program</h3>

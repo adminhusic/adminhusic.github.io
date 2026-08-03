@@ -45,4 +45,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     applyFilters();
   }
+
+  document.querySelectorAll(".course-tile").forEach(function (tile) {
+    tile.addEventListener("click", function () {
+      var flipped = tile.getAttribute("aria-pressed") === "true";
+      tile.setAttribute("aria-pressed", flipped ? "false" : "true");
+    });
+  });
 });

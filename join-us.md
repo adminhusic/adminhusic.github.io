@@ -15,8 +15,9 @@ image: /assets/img/husic-headshot.jpg
     (see <a href="{{ '/research/' | relative_url }}">Research</a>), so funded positions are available.
   </p>
   <svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-    <path d="M12 6c-2-1.5-5-2-8-1v13c3-1 6-.5 8 1c2-1.5 5-2 8-1V5c-3-1-6-.5-8 1Z"/>
-    <path d="M12 6v13"/>
+    <path d="M12 21V11"/>
+    <path d="M12 11c0-4-3-6-7-6c0 4 3 6 7 6Z"/>
+    <path d="M12 14c0-3 3-5 7-5c0 3-3 5-7 5Z"/>
   </svg>
 </div>
 

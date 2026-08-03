@@ -64,11 +64,11 @@ image: /assets/img/husic-headshot.jpg
           <path d="M10 45c15-8 25 8 40 0s25-8 40 0 25 8 40 0 15-8 20-4"/>
           <path d="M10 65c15-8 25 8 40 0s25-8 40 0 25 8 40 0 15-8 20-4"/>
           <path d="M10 85c15-8 25 8 40 0s25-8 40 0 25 8 40 0 15-8 20-4"/>
-          <circle cx="45" cy="55" r="2.2" fill="currentColor" stroke="none"/>
-          <circle cx="95" cy="75" r="2.6" fill="currentColor" stroke="none"/>
-          <circle cx="122" cy="50" r="2" fill="currentColor" stroke="none"/>
-          <circle cx="65" cy="90" r="1.8" fill="currentColor" stroke="none"/>
-          <circle cx="18" cy="70" r="1.8" fill="currentColor" stroke="none"/>
+          <circle cx="45" cy="55" r="2.2" fill="currentColor" stroke="none" opacity="0.6"/>
+          <circle cx="95" cy="75" r="2.6" fill="currentColor" stroke="none" opacity="0.6"/>
+          <circle cx="122" cy="55" r="2" fill="currentColor" stroke="none" opacity="0.6"/>
+          <circle cx="65" cy="90" r="1.8" fill="currentColor" stroke="none" opacity="0.6"/>
+          <circle cx="18" cy="70" r="1.8" fill="currentColor" stroke="none" opacity="0.6"/>
         </svg>
       </div>
       <div class="feature-panel__body">
@@ -87,7 +87,7 @@ image: /assets/img/husic-headshot.jpg
       <div class="feature-panel__art">
         <svg viewBox="0 0 160 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M45 42a16 16 0 0 1 30-7 20 20 0 0 1 38 9 14 14 0 0 1-4 27H50a16 16 0 0 1-5-29Z"/>
-          <path d="M55 76v10M75 76v14M95 76v10M65 91v8M85 93v8"/>
+          <path d="M55 76v10M75 76v14M95 76v10M65 91v8M85 93v8" opacity="0.6"/>
           <path d="M10 108c15-6 25 6 40 0s25-6 40 0 25 6 40 0 15-6 20-2"/>
         </svg>
       </div>
