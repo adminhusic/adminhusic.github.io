@@ -7,7 +7,7 @@
   description: "Laboratory companion to Fluid Mechanics; hands-on experiments in hydrostatics, pipe flow, and open-channel hydraulics."
 
 - title: "Open Channel Flow"
-  level: Graduate
+  level: Undergraduate
   description: "Steady and unsteady open-channel hydraulics, including gradually/rapidly varied flow, hydraulic structures, and sediment-laden flow."
 
 - title: "Mechanics of Sediment Transport"
