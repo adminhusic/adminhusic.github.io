@@ -9,16 +9,16 @@ mascot:
   name: "Darcy"
   role: "Great Pyrenees Mix / Good Girl"
   desc:
-    - "Darcy loves to run through snow, be praised, and solve vexing problems related to the environment."
+    - "Darcy loves to run through snow, be praised, and solve vexing problems related to water resources."
     - "She was adopted from the Lawrence Humane Society and joined our team in January 2021."
 
 current:
   - name: "Arlex Marin Ramirez"
     role: "Postdoctoral Scholar"
-    note: "Continental-scale modeling of water quality and metabolism."
+    note: "Continental-scale modeling of river metabolism and conservation efficacy."
   - name: "Chuqiang Chen"
     role: "Doctoral Student"
-    note: "Large-scale streamflow and multi-task modeling with deep learning."
+    note: "Large-scale streamflow and water quality modeling with deep learning."
   - name: "Abby Percich"
     role: "Doctoral Student"
     note: "Sediment source fingerprinting and machine learning for ungauged basins."
@@ -32,99 +32,131 @@ current:
 # last_year: the last calendar year this person was with the lab, used to sort
 # each alumni group in reverse-chronological order. 0 means unknown/not yet
 # provided -- please fill in a real year rather than leaving these as 0.
+# first_year: the calendar year this person joined the lab, shown next to
+# last_year as "first_year - last_year". Every entry below currently has
+# first_year set equal to last_year as a placeholder -- please replace each
+# with the real starting year.
 alumni:
   - name: "Sai Kiran Kuntla"
     role: "Postdoctoral Scholar"
+    first_year: 2026
     last_year: 2026
     note: "Harmonizing fragmented high-frequency water quality sensor data."
 
   - name: "Amirreza Zarnaghsh"
     role: "Doctoral Student"
-    last_year: 2022
+    first_year: 2019
+    last_year: 2023
     note: "High-frequency sensing and transport pathways of solutes and sediment."
 
   - name: "Nishchal Sigdel"
     role: "Master's Student"
+    first_year: 2024
     last_year: 2026
     note: "Continental-scale suspended sediment prediction with deep learning."
   - name: "Sugam Shrestha"
     role: "Master's Student"
+    first_year: 2024
     last_year: 2026
     note: "Modeling sediment erosion and connectivity with sensors and machine learning."
   - name: "Cayden Lloyd"
     role: "Master's Student"
+    first_year: 2024
     last_year: 2026
     note: "Sediment fingerprinting of reservoir and river sediment sources."
   - name: "Aayush Pandit"
     role: "Master's Student"
-    last_year: 2025
+    first_year: 2022
+    last_year: 2024
     note: "Deep learning for nitrate export and watershed model benchmarking."
   - name: "Zack McVey"
     role: "Master's Student"
+    first_year: 2021
     last_year: 2023
     note: "Land use impacts on dynamic sediment connectivity."
   - name: "Zane Rider"
     role: "Master's Student"
+    first_year: 2021
     last_year: 2022
     note: "Cyanotoxins and taste-and-odor compounds in benthic algae."
   - name: "Alexander Michalek"
     role: "Master's Student"
-    last_year: 2020
+    first_year: 2019
+    last_year: 2021
     note: "Sediment erosion-connectivity mapping in urbanizing landscapes."
-    
+
   - name: "Laura VanderMeulen"
     role: "Undergraduate Student"
+    first_year: 2023
     last_year: 2024
     note: "Meta-analysis of sediment fingerprinting applications."
   - name: "Avery Mohn"
     role: "Undergraduate Student"
+    first_year: 2022
     last_year: 2024
     note: "Microplastics in stormwater and fluvial sediment."
   - name: "Elizabeth Appel"
     role: "Undergraduate Student"
+    first_year: 2022
     last_year: 2024
-    note: "Racial equity of flood exposure in historically redlined communities."
+    note: "Racial equity of flood exposure in redlined communities."
   - name: "Jack Respelliers"
     role: "Undergraduate Student"
+    first_year: 2022
     last_year: 2024
     note: "Sediment fingerprinting data collection."
   - name: "Austin Gardiner"
     role: "Undergraduate Student"
+    first_year: 2021
     last_year: 2022
     note: "Sediment fingerprinting data collection."
   - name: "Aaron Tuschhoff"
     role: "Undergraduate Student"
+    first_year: 2020
     last_year: 2022
     note: "Sediment fingerprinting data collection."
   - name: "Sarah Hogen"
     role: "Undergraduate Student"
+    first_year: 2020
     last_year: 2022
     note: "Synthesis of water quality model performance."
   - name: "Devin Gouger"
     role: "Undergraduate Student"
+    first_year: 2020
     last_year: 2021
     note: "Sediment fingerprinting data collection."
   - name: "Logan Wilson"
     role: "Undergraduate Student"
+    first_year: 2019
     last_year: 2020
+    note: "Sediment fingerprinting data collection."
+  - name: "Abby Percich"
+    role: "Undergraduate Student"
+    first_year: 2019
+    last_year: 2021
     note: "Hydrologic modeling along an urbanization gradient."
   - name: "Madeline Merckling"
     role: "Undergraduate Student"
+    first_year: 2019
     last_year: 2020
     note: "Sediment fingerprinting data collection."
   - name: "Luke Brown"
     role: "Undergraduate Student"
+    first_year: 2019
     last_year: 2020
     note: "High-frequency water quality sensing platforms."
   - name: "Alexandria Depew"
     role: "Undergraduate Student"
-    last_year: 2020
+    first_year: 2018
+    last_year: 2019
     note: "High-frequency water quality sensing platforms."
   - name: "Cheyenne Hillman"
     role: "Undergraduate Student"
+    first_year: 2018
     last_year: 2019
     note: "Sediment fingerprinting data collection."
   - name: "Savannah Smith"
     role: "Undergraduate Student"
+    first_year: 2018
     last_year: 2019
     note: "Sediment fingerprinting data collection."

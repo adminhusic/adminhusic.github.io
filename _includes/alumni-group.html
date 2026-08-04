@@ -1,13 +1,16 @@
 {% if include.group.size > 0 %}
-<div class="alumni-group">
-  <h3 class="alumni-group-title">{{ include.title }}</h3>
+<details class="alumni-group">
+  <summary class="alumni-group-title">
+    {{ include.title }}
+    <svg class="icon icon--sm alumni-group-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+  </summary>
   <ul class="alumni-list">
     {% for person in include.group %}
     <li>
-      <h4 class="alumni-name">{{ person.name }}{% if person.last_year > 0 %} <span class="alumni-year">&middot; {{ person.last_year }}</span>{% endif %}</h4>
+      <h4 class="alumni-name">{{ person.name }}{% if person.last_year > 0 %} <span class="alumni-year">&middot; {{ person.first_year }} - {{ person.last_year }}</span>{% endif %}</h4>
       <span class="role">{{ person.note }}</span>
     </li>
     {% endfor %}
   </ul>
-</div>
+</details>
 {% endif %}
