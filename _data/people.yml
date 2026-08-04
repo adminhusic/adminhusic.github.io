@@ -15,18 +15,23 @@ mascot:
 current:
   - name: "Arlex Marin Ramirez"
     role: "Postdoctoral Scholar"
+    image: "/assets/img/arlex_ramirez.jpg"
     note: "Continental-scale modeling of river metabolism and conservation efficacy."
   - name: "Chuqiang Chen"
     role: "Doctoral Student"
+    image: "/assets/img/chuqiang_chen.jpg"
     note: "Large-scale streamflow and water quality modeling with deep learning."
   - name: "Abby Percich"
     role: "Doctoral Student"
+    image: "/assets/img/abby_percich.JPG"
     note: "Sediment source fingerprinting and machine learning for ungauged basins."
   - name: "Diver Marin"
     role: "Doctoral Student"
+    image: "/assets/img/diver_marin.jpeg"
     note: "Deep learning models for freshwater salinization."
   - name: "Yuexuan Gu"
     role: "Doctoral Student"
+    image: "/assets/img/yuexuan_gu.jpg"
     note: "Physically-informed, AI-driven modeling of water quality."
 
 # last_year: the last calendar year this person was with the lab, used to sort

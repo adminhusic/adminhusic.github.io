@@ -399,6 +399,13 @@ main.page { min-height: 50vh; }
   font-size: 1.6rem;
   margin-bottom: 12px;
 }
+.person__avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow-md);
+}
 .person__name { font-weight: 650; margin: 0; font-size: inherit; line-height: inherit; letter-spacing: normal; }
 .person__role { color: var(--color-accent-strong); font-size: 0.88rem; margin: 2px 0 6px; }
 .person__desc { color: var(--color-text-muted); font-size: 0.92rem; margin: 0 0 4px; }

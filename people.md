@@ -12,7 +12,7 @@ image: /assets/img/husic-headshot.jpg
       <h2 class="section-title">Principal Investigator</h2>
       <div class="person">
         <div class="person__avatar">
-          <img src="{{ '/assets/img/husic-headshot.jpg' | relative_url }}" alt="" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+          <img src="{{ '/assets/img/husic-headshot.jpg' | relative_url }}" alt="">
         </div>
         <h3 class="person__name">{{ site.data.people.pi.name }}</h3>
         <p class="person__role">{{ site.data.people.pi.role }}</p>
@@ -23,7 +23,7 @@ image: /assets/img/husic-headshot.jpg
       <h2 class="section-title">Lab Mascot</h2>
       <div class="person">
         <div class="person__avatar">
-          <img src="{{ '/assets/img/darcy.jpg' | relative_url }}" alt="Darcy, the lab's Great Pyrenees mix mascot" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+          <img src="{{ '/assets/img/darcy.jpg' | relative_url }}" alt="Darcy, the lab's Great Pyrenees mix mascot">
         </div>
         <h3 class="person__name">{{ site.data.people.mascot.name }}</h3>
         <p class="person__role">{{ site.data.people.mascot.role }}</p>
@@ -41,7 +41,13 @@ image: /assets/img/husic-headshot.jpg
     {% for person in site.data.people.current %}
     {% assign name_parts = person.name | split: " " %}
     <div class="person">
-      <div class="person__avatar">{{ name_parts.first | slice: 0, 1 }}{{ name_parts.last | slice: 0, 1 }}</div>
+      <div class="person__avatar">
+        {% if person.image %}
+        <img src="{{ person.image | relative_url }}" alt="" loading="lazy">
+        {% else %}
+        {{ name_parts.first | slice: 0, 1 }}{{ name_parts.last | slice: 0, 1 }}
+        {% endif %}
+      </div>
       <h3 class="person__name">{{ person.name }}</h3>
       <p class="person__role">{{ person.role }}</p>
       <p class="person__desc">{{ person.note }}</p>
