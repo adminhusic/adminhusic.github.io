@@ -822,6 +822,222 @@ main.page { min-height: 50vh; }
   align-items: center;
 }
 .intro-band p { font-size: 1.1rem; color: var(--color-text-muted); margin: 0; max-width: 60ch; }
+.intro-band p + p { margin-top: 14px; }
+
+/* ---------------------------------------------------------------- */
+/* Research areas rail + panels                                       */
+/* ---------------------------------------------------------------- */
+/* Progressive enhancement: with no JS, .areas stays a single column and
+   every panel renders in sequence -- the whole page is readable and
+   Ctrl+F-able. main.js adds .is-enhanced, which is the only thing that
+   turns on the two-pane layout and the one-panel-at-a-time behaviour. */
+.areas__rail { list-style: none; margin: 20px 0 0; padding: 0; }
+.area-tab {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 14px;
+  width: 100%;
+  padding: 14px;
+  background: none;
+  border: none;
+  border-top: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.areas__rail li:last-child .area-tab { border-bottom: 1px solid var(--color-border); }
+.area-tab .icon { color: var(--color-accent); margin-top: 2px; }
+.area-tab__text { display: block; min-width: 0; }
+.area-tab__title {
+  display: block;
+  font-weight: 650;
+  color: var(--color-accent-strong);
+  line-height: 1.3;
+}
+.area-tab__summary {
+  display: block;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  margin-top: 4px;
+}
+.areas.is-enhanced .area-tab { border-radius: 0; transition: background-color 0.15s; }
+.areas.is-enhanced .area-tab:hover { background: var(--color-bg-alt); }
+.areas.is-enhanced .area-tab[aria-expanded="true"] {
+  background: var(--color-accent-soft);
+  box-shadow: inset 3px 0 0 var(--color-accent);
+}
+@media (prefers-reduced-motion: reduce) {
+  .areas.is-enhanced .area-tab { transition-duration: 0.01ms; }
+}
+
+.area-panel[hidden] { display: none; }
+.areas__panels > .area-panel { margin-top: 32px; }
+.area-panel__title {
+  font-size: 1.15rem;
+  font-weight: 650;
+  color: var(--color-accent-strong);
+  line-height: 1.3;
+  letter-spacing: normal;
+  margin: 0 0 10px;
+}
+.area-panel__desc { margin: 0 0 14px; }
+.area-panel__funding { color: var(--color-text-muted); font-size: 0.9rem; margin: 0 0 14px; }
+.area-panel__label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin: 0 0 4px;
+}
+.area-papers { list-style: none; margin: 0; padding: 0; }
+.area-papers li { padding: 12px 0; border-bottom: 1px solid var(--color-border); }
+.area-papers li:first-child { border-top: 1px solid var(--color-border); }
+.area-papers__title { display: block; font-weight: 600; line-height: 1.4; }
+.area-papers__meta {
+  display: block;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+.area-papers__lab { color: var(--color-accent-strong); font-weight: 650; }
+
+.areas.is-enhanced .areas__panels { margin-top: 24px; }
+/* Two-pane only where there is genuinely room. The page container stays at
+   --max-width (880px) on purpose: the site header and footer live outside the
+   page column, so widening this page alone would visibly inset the nav. */
+@media (min-width: 900px) {
+  .areas.is-enhanced {
+    display: grid;
+    grid-template-columns: 290px minmax(0, 1fr);
+    gap: 36px;
+    align-items: start;
+  }
+  .areas.is-enhanced .areas__rail { margin-top: 0; }
+  .areas.is-enhanced .areas__panels { margin-top: 0; }
+  .areas.is-enhanced .areas__panels > .area-panel { margin-top: 0; }
+}
+
+/* ---------------------------------------------------------------- */
+/* Openings docket + letter (Join Us)                                 */
+/* ---------------------------------------------------------------- */
+.openings__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px 24px;
+  flex-wrap: wrap;
+}
+.openings__header .section-title { margin-bottom: 0; }
+.openings__updated { color: var(--color-text-muted); font-size: 0.85rem; margin: 12px 0 0; }
+.openings { list-style: none; margin: 20px 0 0; padding: 0; }
+.opening {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 6px 24px;
+  align-items: start;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.opening:first-child { border-top: 1px solid var(--color-border); }
+.opening__role {
+  font-size: 1.05rem;
+  font-weight: 650;
+  color: var(--color-accent-strong);
+  margin: 0;
+  line-height: 1.3;
+  letter-spacing: normal;
+}
+.opening__detail { color: var(--color-text-muted); font-size: 0.92rem; margin: 4px 0 0; }
+.opening__funding { color: var(--color-text-muted); font-size: 0.85rem; margin: 4px 0 0; }
+/* Deliberately NOT a pill/button: a status is information, not an action, and it
+   sits near a real button. Dot + muted caps, no fill and no border. */
+.opening__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  padding-top: 4px;
+}
+.opening__status::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  flex-shrink: 0;
+}
+
+/* Masthead: the sprout mark + institutional line that tops the Join Us page,
+   set like the letterhead on a printed sheet. */
+.masthead { margin-top: 8px; }
+.masthead__mark { display: block; margin: 0 auto 14px; color: var(--color-accent); }
+.masthead__line {
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  margin: 0;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--color-border);
+}
+.letter__salutation { font-size: 1.1rem; font-weight: 650; margin: 0 0 20px; }
+.letter__block {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  gap: 28px;
+  align-items: start;
+  margin-bottom: 18px;
+}
+.letter__block > p { margin: 0; }
+.letter__block .checklist { margin: 14px 0 0; }
+.letter__note {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+  border-left: 2px solid var(--color-accent-soft);
+  padding-left: 14px;
+}
+.letter__note strong {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-accent-strong);
+  margin-bottom: 5px;
+}
+.letter__signoff {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border);
+}
+.letter__signoff-name { font-weight: 650; margin: 0; }
+.letter__signoff-contact { color: var(--color-text-muted); font-size: 0.92rem; margin: 2px 0 0; }
+
+@media (max-width: 720px) {
+  .letter__block { grid-template-columns: 1fr; gap: 14px; }
+  .letter__note {
+    border-left: none;
+    border-top: 1px solid var(--color-border);
+    padding-left: 0;
+    padding-top: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .opening { grid-template-columns: 1fr; }
+  .opening__status { padding-top: 6px; }
+}
 @media (max-width: 640px) {
   .intro-band { grid-template-columns: 1fr; text-align: center; }
   .intro-band .icon--lg { margin: 0 auto; }

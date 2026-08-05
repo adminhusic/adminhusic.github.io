@@ -14,56 +14,74 @@ catchments to the continental scale.
 
 <div class="section">
   <h2 class="section-title">Research Areas</h2>
+  <p class="page-hint">Select an area to read more and see selected work from the group.</p>
 
-  <ul class="area-list">
-    <li class="area-row">
-      <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <circle cx="6" cy="7" r="2"/>
-        <circle cx="18" cy="7" r="2"/>
-        <circle cx="12" cy="18" r="2"/>
-        <path d="M7.7 8.4 10.4 16M16.3 8.4 13.6 16M8 7h8"/>
-      </svg>
-      <div>
-        <h3>Machine Learning for Water Resources</h3>
-        <p>Deep learning and interpretable ML for streamflow, sediment, and nutrient prediction at
-        basin-to-continental scales, and benchmarking these models against process-based understanding.</p>
-      </div>
-    </li>
-    <li class="area-row">
-      <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M3 13h2.5l1.5-5 2.5 10 2-7 1.5 3.5H20"/>
-      </svg>
-      <div>
-        <h3>High-Frequency Sensing</h3>
-        <p>Deploying and mining networks of in-situ nitrate, conductivity, and turbidity sensors to
-        resolve storm-event and seasonal water quality dynamics that grab samples miss.</p>
-      </div>
-    </li>
-    <li class="area-row">
-      <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M3 8h18"/>
-        <path d="M3 12h11"/>
-        <path d="M3 16h18"/>
-        <path d="M16 12h4m0 0-2.2-2.2M20 12l-2.2 2.2"/>
-      </svg>
-      <div>
-        <h3>Sediment Source &amp; Transport</h3>
-        <p>Sediment fingerprinting with fallout radionuclides and geochemical tracers, hysteresis
-        analysis, and reservoir sedimentation assessment to target conservation practices.</p>
-      </div>
-    </li>
-    <li class="area-row">
-      <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M12 3s6.5 8 6.5 12.5a6.5 6.5 0 0 1-13 0C5.5 11 12 3 12 3Z"/>
-        <path d="M9 15.5 12 13l3 2.5"/>
-      </svg>
-      <div>
-        <h3>Freshwater Salinization &amp; Urban Water Quality</h3>
-        <p>Tracing the sources and drivers of chloride and salt ion pollution in urbanizing and
-        drinking-water-supply watersheds, and the social-ecological-technological systems behind it.</p>
-      </div>
-    </li>
-  </ul>
+  <div class="areas">
+    <ul class="areas__rail">
+      {% for a in site.data.research_areas.areas %}
+      <li>
+        <button type="button" class="area-tab" data-area="{{ a.id }}" aria-expanded="false" aria-controls="panel-{{ a.id }}">
+          {% case a.id %}
+          {% when "machine-learning" %}
+          <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="6" cy="7" r="2"/>
+            <circle cx="18" cy="7" r="2"/>
+            <circle cx="12" cy="18" r="2"/>
+            <path d="M7.7 8.4 10.4 16M16.3 8.4 13.6 16M8 7h8"/>
+          </svg>
+          {% when "sensing" %}
+          <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 13h2.5l1.5-5 2.5 10 2-7 1.5 3.5H20"/>
+          </svg>
+          {% when "sediment" %}
+          <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 8h18"/>
+            <path d="M3 12h11"/>
+            <path d="M3 16h18"/>
+            <path d="M16 12h4m0 0-2.2-2.2M20 12l-2.2 2.2"/>
+          </svg>
+          {% when "salinization" %}
+          <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3s6.5 8 6.5 12.5a6.5 6.5 0 0 1-13 0C5.5 11 12 3 12 3Z"/>
+            <path d="M9 15.5 12 13l3 2.5"/>
+          </svg>
+          {% endcase %}
+          <span class="area-tab__text">
+            <span class="area-tab__title">{{ a.title }}</span>
+            <span class="area-tab__summary">{{ a.summary }}</span>
+          </span>
+        </button>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <div class="areas__panels">
+      {% for a in site.data.research_areas.areas %}
+      <section class="area-panel" id="panel-{{ a.id }}" data-area="{{ a.id }}">
+        <h3 class="area-panel__title">{{ a.title }}</h3>
+        <p class="area-panel__desc">{{ a.description }}</p>
+        {% if a.funded_by and a.funded_by != "" %}
+        <p class="area-panel__funding">Funded by {{ a.funded_by }}</p>
+        {% endif %}
+        <p class="area-panel__label">Selected work</p>
+        <ul class="area-papers">
+          {% for doi in a.papers %}
+            {% assign pub = site.data.publications | where: "doi", doi | first %}
+            {% if pub %}
+          <li>
+            <a class="area-papers__title" href="{{ pub.doi }}" target="_blank" rel="noopener">{{ pub.title }}</a>
+            <span class="area-papers__meta">
+              {{ pub.journal }}{% if pub.citation and pub.citation != "" %}, {{ pub.citation }}{% endif %} &middot; {{ pub.year }}{% if pub.lead == "lab" %} &middot; <span class="area-papers__lab">Lab&#8209;led</span>{% endif %}
+            </span>
+          </li>
+            {% else %}<!-- research_areas.yml: no publication in _data/publications.yml matches DOI {{ doi }} -->
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </section>
+      {% endfor %}
+    </div>
+  </div>
 </div>
 
 <div class="divider"><span class="divider__mark"></span></div>

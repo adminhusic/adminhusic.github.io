@@ -1,20 +1,49 @@
 # Peer-reviewed journal articles for Admin Husic
-# Auto-generated from CV text. Order matches the CV (In Review first, then
-# Published, both in the CV's given / reverse-chronological order).
+# Reverse-chronological. PUBLISHED WORK ONLY -- in-review / in-revision
+# manuscripts are deliberately not listed here. They do not appear on ORCID as
+# journal articles (so the sync never adds them), the site never rendered them
+# anyway, and listing unpublished work claims a result before it has cleared peer
+# review. A paper enters this file once it is accepted and has a real DOI.
+# "In Press" entries are legitimate published work -- online and citable by DOI,
+# they simply have no volume/page numbers yet.
+#
+# NOTE ON ENCODING: this file is UTF-8 and contains non-ASCII author names
+# (Brandao, Marin, Gomez, Echavarria are all accented in the real text) plus
+# en-dashes and curly quotes. Edit it with a UTF-8-aware tool. In particular, do
+# NOT round-trip it through Windows PowerShell's `Get-Content` / `Set-Content`
+# without an explicit `-Encoding utf8`: the default reads UTF-8 bytes as ANSI and
+# silently mangles every accented name in the file.
 #
 # Schema per entry:
 #   year:      integer, publication (or expected) year
-#   status:    "in_review" or "published"
-#   lead:      "lab" if the first author is Husic or one of his own current/
-#              former student or postdoc advisees (an underlined name below),
-#              else "external" (a collaborator outside the lab is first author)
+#   status:    always "published". The field is kept because the Publications page
+#              and the homepage count both filter on it, so it still guards against
+#              an unpublished entry slipping in.
+#   lead:      "lab" if the work was led or directed from this lab, else "external".
+#              This is a judgment about who drove the work -- NOT a mechanical check
+#              of whether the first author is Husic or an advisee. Being an advisee
+#              and leading a paper from this lab are different things, and the two
+#              can come apart in both directions. Two real entries below look like
+#              errors under the naive rule but are correct as written -- do NOT
+#              "fix" them:
+#                * Michalek et al. 2023 (Nature Communications) is "external".
+#                  Michalek is a former MS advisee, so his name is underlined, but
+#                  that paper came out of his later PhD lab, not this one.
+#                * Layzell et al. 2026 (ESPL) is "lab". Layzell is an independent
+#                  scientist and the first author, but Husic is corresponding
+#                  author and directed the work.
+#              Drives the All / Lab-Led filter on the Publications page, so a wrong
+#              value changes a number shown publicly. The ORCID sync script cannot
+#              infer this field (Crossref does not reliably expose corresponding
+#              author, and never exposes who directed the work) -- always verify
+#              `lead` by hand on any auto-synced entry before merging its PR.
 #   authors:   full author list as written in the CV, up to the year.
 #              <u> wraps student/postdoc advisee names (per the CV's own
 #              underline convention); <strong> wraps Husic, A.
 #   title:     article title only, no trailing period
 #   journal:   journal name only (null if not yet assigned / not stated)
 #   citation:  everything after the journal name (volume/issue/pages/article
-#              number, or "In Press"/"In Revision"/"In Review")
+#              number, or "In Press" for accepted work not yet paginated)
 #   doi:       DOI URL (e.g. "https://doi.org/10.xxxx/..."), or null if not
 #              yet filled in — none are populated automatically; add real
 #              DOIs here to make the DOI button appear per entry.
@@ -26,72 +55,9 @@
 # is the only download path, for every entry, open-access or not.
 
 - year: 2026
-  status: "in_review"
-  lead: "lab"
-  authors: "<u>Percich, A.</u>, Gellis, A., Fox, J., and <strong>Husic, A.</strong>"
-  title: "Upscaling sediment source prediction for watershed management"
-  journal: null
-  citation: "In Revision"
-  doi: null
-
-- year: 2026
-  status: "in_review"
-  lead: "external"
-  authors: "Liu, F., <u>Zarnaghsh, A.</u>, <strong>Husic, A.</strong>, and Li. L."
-  title: "Extreme storms intensified water quality responses most strongly in low-urban rivers"
-  journal: null
-  citation: "In Revision"
-  doi: null
-
-- year: 2026
-  status: "in_review"
-  lead: "external"
-  authors: "Seybold, E., Hammond, J., <strong>Husic, A.</strong>, McMillan, H., Golden, H., Christensen, J., Segura, C., Zimmer, M., Price, A., Jaeger, K., Li, L., Mahoney, T., Cheng, F., Jones, N., Kelleher, C., Sando, R., and Lane, C.,"
-  title: "Headwaters across the contiguous United States challenge preconceived conceptual models"
-  journal: null
-  citation: "In Revision"
-  doi: null
-
-- year: 2026
-  status: "in_review"
-  lead: "external"
-  authors: "Zang, Y., Treble, P., Yoshimura, K., Pinza, J., Zhang, F., Özdemir, K., Mei, X., <strong>Husic, A.</strong>, Gessert, A., Stroj, A., Andreo, B., Ladouche, B., Stumpp, C., Mance, D., Zagana, E., Huang, F., Sappa, G., Kunstmann, H., Brielmann, H., Zhou, H., Wu, H., Garvelmann, J., Berglund, J., Charlier, J.-B., Lange, J., Barberá Fornell, J., Pu, J., Katsanou, K., Ren, K., Toran, L., Gill, L., Filippini, M., Kralik, M., Mudarra Martínez, M., Zhao, M., Luo, M., Goldscheider, N., Lambrakis, N., De Vita, P., Xiao, Q., Yu, S., Iacurto, S., Coda, S., McCormack, T., Allocca, V., Darling, W., D’Alessandro, W., Guo, X., Hu, Y., Wang, Z., Kaminsky, E., Faimon, J., Lang, M., Pracný, P., and Hartmann, A."
-  title: "The WoKaS-Iso Database: Workflow for a Global Compilation of Oxygen-18 and Deuterium Records in Karst Springs and Cave Drip Water for Enhanced Understanding of Karst Systems"
-  journal: null
-  citation: "In Revision"
-  doi: null
-
-- year: 2026
-  status: "in_review"
-  lead: "external"
-  authors: "Stewart, B., et al."
-  title: "Small streams experience less persistent but more intense heatwaves than large rivers"
-  journal: null
-  citation: "In Review"
-  doi: null
-
-- year: 2026
-  status: "in_review"
-  lead: "external"
-  authors: "Liu, H., Peng, B., Ma, Z., Li, L., Speir, S. L., <strong>Husic, A.</strong>, Sivapalan, M., Guan, K., Pan, M., Zhao, Q., Wang, Y., Jia, M., and Yang, J.,"
-  title: "Nitrate availability and hydrologic connectivity coregulate event-scale concentration contrast and C–Q patterns"
-  journal: null
-  citation: "In Review"
-  doi: null
-
-- year: 2026
-  status: "in_review"
-  lead: "external"
-  authors: "Hale, C., Hotchkiss, R., Shelley, J., <strong>Husic, A.</strong>, Minear, T., and Mansfield, M."
-  title: "Cost-effectiveness model for reservoir sediment management economics"
-  journal: null
-  citation: "In Review"
-  doi: null
-
-- year: 2026
   status: "published"
   lead: "lab"
-  authors: "<u>Nishchal, S.</u> and <strong>Husic, A.</strong>"
+  authors: "<u>Sigdel, N.</u> and <strong>Husic, A.</strong>"
   title: "U.S. rivers are transporting more suspended sediment, often in less time"
   journal: "Communications Earth & Environment"
   citation: "In Press"
@@ -145,7 +111,7 @@
 - year: 2026
   status: "published"
   lead: "lab"
-  authors: "Layzell A., <u>Lloyd, C.</u>, <u>Percich, A.</u>, Harris, T., Ketterer, M., and <strong>Husic, A.</strong>"
+  authors: "Layzell, A., <u>Lloyd, C.</u>, <u>Percich, A.</u>, Harris, T., Ketterer, M., and <strong>Husic, A.</strong>"
   title: "Event-driven shifts in river and reservoir sediment sources: Cottonwood River and John Redmond Reservoir, USA"
   journal: "Earth Surface Processes and Landforms"
   citation: "51(4), e70289"
@@ -289,7 +255,7 @@
 - year: 2025
   status: "published"
   lead: "external"
-  authors: "Bettel, L., Fox, J., <strong>Husic, A.</strong>, Mahoney, T., Martin, A., Zhu, J., Tobin, B., Al-Aamery, N., Osborne, C., Riddle, B., and Pollock E."
+  authors: "Bettel, L., Fox, J., <strong>Husic, A.</strong>, Mahoney, T., Martin, A., Zhu, J., Tobin, B., Al-Aamery, N., Osborne, C., Riddle, B., and Pollock, E."
   title: "Hydrologic pathways and baseflow contributions, and not the proximity of sediment sources, determine the shape of sediment hysteresis curves: Theory development and application in a karst basin in Kentucky USA"
   journal: "Journal of Hydrology"
   citation: "649, 132300"
@@ -325,7 +291,7 @@
 - year: 2023
   status: "published"
   lead: "external"
-  authors: "<u>Michalek. A.</u>, Villarini, G., and <strong>Husic, A.</strong>"
+  authors: "<u>Michalek, A.</u>, Villarini, G., and <strong>Husic, A.</strong>"
   title: "Climate change projected to impact structural hillslope connectivity at the global scale"
   journal: "Nature Communications"
   citation: "14, 6788"
@@ -343,7 +309,7 @@
 - year: 2023
   status: "published"
   lead: "lab"
-  authors: "<u>McVey, Z.</u>, Michalek A., Mahoney, T., and <strong>Husic, A.</strong>"
+  authors: "<u>McVey, Z.</u>, Michalek, A., Mahoney, T., and <strong>Husic, A.</strong>"
   title: "Urbanization as a limiter and catalyst of watershed-scale sediment transport: insights from probabilistic connectivity modeling"
   journal: "Science of the Total Environment"
   citation: "894, 165093"

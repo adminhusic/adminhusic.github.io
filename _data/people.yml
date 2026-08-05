@@ -38,9 +38,10 @@ current:
 # each alumni group in reverse-chronological order. 0 means unknown/not yet
 # provided -- please fill in a real year rather than leaving these as 0.
 # first_year: the calendar year this person joined the lab, shown next to
-# last_year as "first_year - last_year". Every entry below currently has
-# first_year set equal to last_year as a placeholder -- please replace each
-# with the real starting year.
+# last_year as "first_year - last_year". These are real, hand-entered values --
+# they are NOT placeholders. Where first_year equals last_year that person was
+# genuinely with the lab for a single calendar year; do not treat an equal pair
+# as unfilled data.
 alumni:
   - name: "Sai Kiran Kuntla"
     role: "Postdoctoral Scholar"

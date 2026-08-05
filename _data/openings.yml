@@ -1,0 +1,39 @@
+# Recruiting status shown at the top of the Join Us page.
+#
+# This file exists so the single question every visitor has -- "is anything
+# actually open?" -- has a visible, honest answer that is cheap to keep current.
+#
+# updated:  OPTIONAL month + year, e.g. "August 2026". Shown once above the list.
+#           Leave it as "" to omit the stamp entirely.
+#           Only fill this in if you will actually refresh it each cycle. A dated
+#           "Recruiting" that has gone stale is an active false claim; an undated
+#           page is merely non-specific, which is what the page was before.
+#
+# roles[].status:  short label beside the role. Suggested vocabulary, in
+#                  decreasing order of commitment:
+#                    "Recruiting"        a funded slot exists and you are filling it
+#                    "Inquiries welcome" nothing posted, but you want to hear from
+#                                        strong people and will try to find support
+#                    "Not this cycle"    actively discouraging applications for now
+# roles[].detail:  one short factual line, <= 14 words. No promises.
+# roles[].funding: OPTIONAL. Name a grant and its end year ONLY if that role is
+#                  genuinely tied to it, e.g. "NSF CAREER, funded through 2029".
+#                  This answers the question a PhD applicant actually has -- does
+#                  the money outlast my degree. Leave "" if the role is not tied to
+#                  a specific award; an unfunded implication is worse than silence.
+#
+# To remove a role from the page entirely, delete its block. To take the whole
+# section down, delete every role.
+
+updated: ""
+
+roles:
+  - role: "Doctoral Students"
+    status: "Inquiries welcome"
+    detail: "Admission through the Via Department of Civil & Environmental Engineering."
+    funding: ""
+
+  - role: "Postdoctoral Researchers"
+    status: "Inquiries welcome"
+    detail: "Periodically hosted on funded projects; fellowship mechanisms welcome."
+    funding: ""

@@ -151,7 +151,20 @@ function buildEntry(doi, message, labRoster, flags) {
   const formatted = authors.map((a) => formatAuthorName(a, labRoster, flags));
   const authorsHtml = authors.length ? joinAuthorList(formatted.map((f) => f.text)) : "Author list unavailable";
   const first = formatted[0];
+  // Best-effort guess ONLY. `lead` records whether the work was led/directed from
+  // this lab, which is a judgment about intellectual provenance -- Crossref does not
+  // reliably expose corresponding author and never exposes who directed the work, so
+  // this first-author heuristic gets it wrong in both directions (a former advisee
+  // publishing from a later lab guesses "lab" but is "external"; an independent first
+  // author on work Husic directed guesses "external" but is "lab"). Always flagged for
+  // human review below -- see the `lead` notes in _data/publications.yml.
   const lead = first ? (first.isHusic || first.isLab ? "lab" : "external") : "external";
+  flags.push(
+    `${doi}: guessed \`lead: "${lead}"\` from the first author alone. Confirm by hand -- ` +
+      `"lab" means the work was led or directed from this lab (e.g. Husic is corresponding ` +
+      `author), NOT simply that the first author is an advisee. This drives the public ` +
+      `Lab-Led count on the Publications page.`
+  );
 
   const year =
     message.issued?.["date-parts"]?.[0]?.[0] ||

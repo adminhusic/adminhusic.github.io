@@ -164,7 +164,7 @@ image: /assets/img/husic-headshot.jpg
     <li class="contents-item">
       <a class="contents-link" href="{{ '/join-us/' | relative_url }}">
         <span class="contents-title">Join Us</span>
-        <span class="contents-desc">Openings for prospective PhD students, master's students, and postdocs.</span>
+        <span class="contents-desc">Openings for prospective doctoral students and postdocs.</span>
         <svg class="icon icon--sm contents-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
       </a>
     </li>

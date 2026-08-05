@@ -1,0 +1,87 @@
+# Research areas shown on the Research page.
+#
+# Each area renders as a row in the left-hand rail (icon + title + summary,
+# always visible) and, when selected, a panel on the right with the full
+# description and a short list of selected papers.
+#
+# id:          slug used for the icon lookup in research.md and for the panel's
+#              anchor. Changing it means changing the {% case %} in research.md.
+# title:       area name, shown in the rail and as the panel heading.
+# summary:     ONE short line, always visible in the rail even when the area is
+#              not selected. This is deliberate: a reviewer skimming the page (or
+#              using Ctrl+F) must be able to see what every area is about without
+#              clicking through all four.
+# description: the full paragraph. Moved verbatim from the previous version of
+#              research.md -- not rewritten.
+# funded_by:   OPTIONAL. Name the grant that backs this area and it renders as a
+#              "Funded by" line linking to the funding list below on the page.
+#              Left blank on purpose -- pairing a grant to an area is an editorial
+#              judgment only the PI can make. Fill in a grant title exactly as it
+#              appears in the Current & Recent Funding section of research.md.
+# papers:      2-3 DOI URLs, copied verbatim from _data/publications.yml. Store
+#              the FULL URL ("https://doi.org/10.xxxx/..."), not a bare DOI --
+#              publications.yml stores full URLs and the lookup matches on the
+#              exact string. Title, journal and year are read back out of
+#              publications.yml at build time, so a correction there propagates
+#              here automatically and the two files can never disagree.
+#
+#              A DOI that matches nothing is skipped and leaves an HTML comment
+#              in the page source naming it, so a typo is findable rather than
+#              silently dropping a paper.
+#
+#              These are labelled "Selected work" and never a count -- this is a
+#              curated shortlist, not a complete index. The Publications page
+#              remains the full record.
+#
+# NOTE: the twelve papers below are a STARTING SUGGESTION, chosen by matching
+# titles to areas. Swap, reorder, or replace any of them -- which paper best
+# represents an area is a judgment call that belongs to the PI.
+
+areas:
+  - id: "machine-learning"
+    title: "Machine Learning for Water Resources"
+    summary: "Deep learning and interpretable ML for streamflow, sediment, and nutrient prediction."
+    description: >-
+      Deep learning and interpretable ML for streamflow, sediment, and nutrient prediction at
+      basin-to-continental scales, and benchmarking these models against process-based understanding.
+    funded_by: ""
+    papers:
+      - "https://doi.org/10.5194/hess-29-4457-2025"
+      - "https://doi.org/10.1029/2024WR039207"
+      - "https://doi.org/10.1038/s43247-026-03788-2"
+
+  - id: "sensing"
+    title: "High-Frequency Sensing"
+    summary: "In-situ sensor networks resolving storm-event and seasonal water quality dynamics."
+    description: >-
+      Deploying and mining networks of in-situ nitrate, conductivity, and turbidity sensors to
+      resolve storm-event and seasonal water quality dynamics that grab samples miss.
+    funded_by: ""
+    papers:
+      - "https://doi.org/10.1016/j.advwatres.2024.104693"
+      - "https://doi.org/10.1029/2022WR033180"
+      - "https://doi.org/10.1016/j.scitotenv.2023.164931"
+
+  - id: "sediment"
+    title: "Sediment Source & Transport"
+    summary: "Fingerprinting sediment sources with fallout radionuclides and geochemical tracers."
+    description: >-
+      Sediment fingerprinting with fallout radionuclides and geochemical tracers, hysteresis
+      analysis, and reservoir sedimentation assessment to target conservation practices.
+    funded_by: ""
+    papers:
+      - "https://doi.org/10.1029/2021GL094497"
+      - "https://doi.org/10.1002/esp.70289"
+      - "https://doi.org/10.1002/rra.70032"
+
+  - id: "salinization"
+    title: "Freshwater Salinization & Urban Water Quality"
+    summary: "Tracing chloride and salt ion pollution in urbanizing and drinking-water watersheds."
+    description: >-
+      Tracing the sources and drivers of chloride and salt ion pollution in urbanizing and
+      drinking-water-supply watersheds, and the social-ecological-technological systems behind it.
+    funded_by: ""
+    papers:
+      - "https://doi.org/10.1021/acs.est.5c04512"
+      - "https://doi.org/10.1038/s43247-025-03152-w"
+      - "https://doi.org/10.1016/j.watres.2025.124652"
