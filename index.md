@@ -55,6 +55,8 @@ image: /assets/img/husic-headshot.jpg
   </div>
 </div>
 
+<div class="divider"><span class="divider__mark"></span></div>
+
 <div class="section">
   <h2 class="section-title">Featured Research</h2>
   <ul class="triptych">
