@@ -33,6 +33,8 @@ image: /assets/img/husic-headshot.jpg
   </ul>
 </div>
 
+<div class="divider"><span class="divider__mark"></span></div>
+
 <div class="letter">
   <svg class="icon icon--md letter__mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
     <path d="M12 21V11"/>
