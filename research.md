@@ -6,15 +6,14 @@ description: "Admin Husic's research at Virginia Tech on hydrology, sediment tra
 image: /assets/img/husic-headshot.jpg
 ---
 
-<p class="lede"><strong>Dynamic connectivity</strong> is how water, sediment, and nutrients move across a
-landscape through links that shift over time &mdash; and the role people play in modulating those
-connections.</p>
+<strong>Dynamic connectivity</strong> is how water, sediment, and nutrients move across a
+landscape via linkages that shift over time &mdash; and the role people play in modulating those
+connections. It is at this intersection of hydrology, water quality, and data science that my group operates. We combine
+deep learning, environmental sensors, geochemical tracers, and numerical models to understand 
+how watersheds function &mdash; and how that function is being reshaped by urbanization, 
+deforestation, agriculturalization, and climate change, from individual catchments to the continental scale.
 
-My group works at the intersection of hydrology, biogeochemistry, and data science. We combine
-high-frequency aquatic sensors, geochemical and isotopic tracers, numerical models, and machine
-learning to understand how watersheds move water, sediment, and nutrients &mdash; and how that
-movement is being reshaped by urbanization, deforestation, agriculture, and climate change, from individual
-catchments to the continental scale.
+<div class="divider"><span class="divider__mark"></span></div>
 
 <div class="section">
   <h2 class="section-title">Research Areas</h2>
