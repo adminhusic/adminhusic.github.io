@@ -46,9 +46,9 @@ areas:
       basin-to-continental scales, and benchmarking these models against process-based understanding.
     funded_by: ""
     papers:
-      - "https://doi.org/10.5194/hess-29-4457-2025"
-      - "https://doi.org/10.1029/2024WR039207"
       - "https://doi.org/10.1038/s43247-026-03788-2"
+      - "https://doi.org/10.1029/2024WR039207"
+      - "https://doi.org/10.5194/hess-29-4457-2025"
 
   - id: "sensing"
     title: "High-Frequency Sensing"
@@ -70,9 +70,9 @@ areas:
       analysis, and reservoir sedimentation assessment to target conservation practices.
     funded_by: ""
     papers:
-      - "https://doi.org/10.1029/2021GL094497"
+      - "https://doi.org/10.1038/s43247-026-03847-8"
       - "https://doi.org/10.1002/esp.70289"
-      - "https://doi.org/10.1002/rra.70032"
+      - "https://doi.org/10.1029/2021GL094497"
 
   - id: "salinization"
     title: "Freshwater Salinization & Urban Water Quality"

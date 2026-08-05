@@ -9,15 +9,6 @@ image: /assets/img/husic-headshot.jpg
 {% assign openings = site.data.openings %}
 {% assign mail_subject = "Website inquiry: joining the Dynamic Connectivity Lab" %}
 
-<div class="masthead">
-  <svg class="icon icon--md masthead__mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-    <path d="M12 21V11"/>
-    <path d="M12 11c0-4-3-6-7-6c0 4 3 6 7 6Z"/>
-    <path d="M12 14c0-3 3-5 7-5c0 3-3 5-7 5Z"/>
-  </svg>
-  <p class="masthead__line">Dynamic Connectivity Lab &middot; Occoquan Watershed Monitoring Laboratory &middot; Virginia Tech</p>
-</div>
-
 <div class="section">
   <div class="openings__header">
     <h2 class="section-title">Current Openings</h2>
@@ -45,6 +36,13 @@ image: /assets/img/husic-headshot.jpg
 <div class="divider"><span class="divider__mark"></span></div>
 
 <div class="letter">
+  <svg class="icon icon--md letter__mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M12 21V11"/>
+    <path d="M12 11c0-4-3-6-7-6c0 4 3 6 7 6Z"/>
+    <path d="M12 14c0-3 3-5 7-5c0 3-3 5-7 5Z"/>
+  </svg>
+  <p class="letter__head">Dynamic Connectivity Lab &middot; Occoquan Watershed Monitoring Laboratory &middot; Virginia Tech</p>
+
   <p class="letter__salutation">Dear prospective student or postdoc,</p>
 
   <div class="letter__block">
@@ -55,8 +53,8 @@ image: /assets/img/husic-headshot.jpg
     </p>
     <aside class="letter__note">
       <strong>Funding</strong>
-      The group's work is supported by an NSF CAREER award and several collaborative grants &mdash;
-      see <a href="{{ '/research/' | relative_url }}">Research</a>.
+      An NSF CAREER award and several collaborative
+      <a href="{{ '/research/' | relative_url }}">grants</a>.
     </aside>
   </div>
 

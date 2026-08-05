@@ -831,7 +831,23 @@ main.page { min-height: 50vh; }
    every panel renders in sequence -- the whole page is readable and
    Ctrl+F-able. main.js adds .is-enhanced, which is the only thing that
    turns on the two-pane layout and the one-panel-at-a-time behaviour. */
-.areas__rail { list-style: none; margin: 20px 0 0; padding: 0; }
+/* Lede: the one-sentence definition opening the Research page. The page used to
+   open with methods; leading with the idea means a reader knows what the lab is
+   about before learning how it is studied. */
+.lede {
+  font-size: 1.1rem;
+  line-height: 1.55;
+  color: var(--color-text);
+  max-width: 62ch;
+  margin: 0 0 20px;
+}
+.lede strong { color: var(--color-accent-strong); }
+
+/* The gap above the rail lives on the container, not on .areas__rail itself:
+   the desktop rule below zeroes the rail's own margin so its top aligns with
+   the panel, which would otherwise leave the rail flush against the hint. */
+.areas { margin-top: 24px; }
+.areas__rail { list-style: none; margin: 0; padding: 0; }
 .area-tab {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
@@ -916,7 +932,6 @@ main.page { min-height: 50vh; }
     gap: 36px;
     align-items: start;
   }
-  .areas.is-enhanced .areas__rail { margin-top: 0; }
   .areas.is-enhanced .areas__panels { margin-top: 0; }
   .areas.is-enhanced .areas__panels > .area-panel { margin-top: 0; }
 }
@@ -976,25 +991,29 @@ main.page { min-height: 50vh; }
   flex-shrink: 0;
 }
 
-/* Masthead: the sprout mark + institutional line that tops the Join Us page,
-   set like the letterhead on a printed sheet. */
-.masthead { margin-top: 8px; }
-.masthead__mark { display: block; margin: 0 auto 14px; color: var(--color-accent); }
-.masthead__line {
+/* Letterhead: sprout mark + institutional line opening the letter, set like
+   the letterhead on a printed sheet. */
+.letter__mark { display: block; margin: 0 auto 14px; color: var(--color-accent); }
+.letter__head {
   text-align: center;
   font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--color-text-muted);
-  margin: 0;
+  margin: 0 0 28px;
   padding-bottom: 18px;
   border-bottom: 1px solid var(--color-border);
 }
 .letter__salutation { font-size: 1.1rem; font-weight: 650; margin: 0 0 20px; }
+/* A block is one grid row, so its height is set by whichever is taller: the
+   paragraph or its margin note. Keep notes SHORT -- a note taller than the
+   paragraph it annotates opens a visible hole in the left column before the
+   next paragraph. (Grid is used rather than an absolutely-positioned note so
+   two long notes can never overlap each other.) */
 .letter__block {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 190px;
+  grid-template-columns: minmax(0, 1fr) 200px;
   gap: 28px;
   align-items: start;
   margin-bottom: 18px;
