@@ -13,9 +13,16 @@ linkedin: "https://www.linkedin.com/in/admin-husic/"
 
 # Used by jekyll-seo-tag for canonical URLs, Open Graph/Twitter card tags, and
 # structured data -- these need a real absolute URL to generate correctly.
-# baseurl stays blank: this is a GitHub user-page repo (adminhusic.github.io)
-# served at the domain root, not a project-page repo needing a path prefix.
-url: "https://adminhusic.github.io"
+#
+# This is the custom domain (registered at Porkbun), NOT the repo's
+# adminhusic.github.io address. The repo must stay named adminhusic.github.io to
+# remain a GitHub user page; the custom domain is layered on via the CNAME file
+# at the repo root plus apex A/AAAA records pointing at GitHub Pages. GitHub
+# 301-redirects the old adminhusic.github.io URLs here, so previously shared
+# links keep working.
+#
+# baseurl stays blank: served at the domain root, not under a path prefix.
+url: "https://adminhusic.com"
 baseurl: ""
 
 # The github-pages gem defaults to `theme: jekyll-theme-primer` when this key is
