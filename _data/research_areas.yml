@@ -58,9 +58,9 @@ areas:
       resolve storm-event and seasonal water quality dynamics that grab samples miss.
     funded_by: ""
     papers:
+      - "https://doi.org/10.1029/2021GL094497"
       - "https://doi.org/10.1016/j.advwatres.2024.104693"
       - "https://doi.org/10.1029/2022WR033180"
-      - "https://doi.org/10.1016/j.scitotenv.2023.164931"
 
   - id: "sediment"
     title: "Sediment Tracing"
@@ -72,13 +72,13 @@ areas:
     papers:
       - "https://doi.org/10.1038/s43247-026-03847-8"
       - "https://doi.org/10.1002/esp.70289"
-      - "https://doi.org/10.1029/2021GL094497"
+      - "https://doi.org/10.1016/j.scitotenv.2023.164931"
 
   - id: "salinization"
     title: "Urban Impacts"
-    summary: "Tracing chloride and salt ion pollution in urbanizing and drinking-water watersheds."
+    summary: "Tracing pollution in urbanizing and drinking-water basins."
     description: >-
-      Tracing the sources and drivers of chloride and salt ion pollution in urbanizing and
+      Tracing the sources and drivers of salt, sediment, and nutrient pollution in urbanizing and
       drinking-water-supply watersheds, and the social-ecological-technological systems behind it.
     funded_by: ""
     papers:
