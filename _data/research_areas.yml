@@ -39,7 +39,7 @@
 
 areas:
   - id: "machine-learning"
-    title: "Machine Learning for Water Resources"
+    title: "Machine Learning"
     summary: "Deep learning and interpretable ML for streamflow, sediment, and nutrient prediction."
     description: >-
       Deep learning and interpretable ML for streamflow, sediment, and nutrient prediction at
@@ -51,7 +51,7 @@ areas:
       - "https://doi.org/10.5194/hess-29-4457-2025"
 
   - id: "sensing"
-    title: "High-Frequency Sensing"
+    title: "Environmental Sensing"
     summary: "In-situ sensor networks resolving storm-event and seasonal water quality dynamics."
     description: >-
       Deploying and mining networks of in-situ nitrate, conductivity, and turbidity sensors to
@@ -63,7 +63,7 @@ areas:
       - "https://doi.org/10.1016/j.scitotenv.2023.164931"
 
   - id: "sediment"
-    title: "Sediment Source & Transport"
+    title: "Sediment Tracing"
     summary: "Fingerprinting sediment sources with fallout radionuclides and geochemical tracers."
     description: >-
       Sediment fingerprinting with fallout radionuclides and geochemical tracers, hysteresis
@@ -75,7 +75,7 @@ areas:
       - "https://doi.org/10.1029/2021GL094497"
 
   - id: "salinization"
-    title: "Freshwater Salinization & Urban Water Quality"
+    title: "Urban Impacts"
     summary: "Tracing chloride and salt ion pollution in urbanizing and drinking-water watersheds."
     description: >-
       Tracing the sources and drivers of chloride and salt ion pollution in urbanizing and
