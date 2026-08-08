@@ -19,6 +19,9 @@ image: /assets/img/husic-headshot.jpg
       <a class="icon-link" href="{{ site.vt_profile }}" target="_blank" rel="noopener" aria-label="Virginia Tech Faculty Profile" title="Virginia Tech Faculty Profile">
         <img src="{{ '/assets/img/Virginia-Tech-Logo.png' | relative_url }}" alt="Virginia Tech" height="18">
       </a>
+      <a class="icon-link" href="{{ site.scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar profile" title="Google Scholar">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="#4285F4" d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+      </a>
       <a class="icon-link" href="https://orcid.org/{{ site.orcid }}" target="_blank" rel="noopener" aria-label="ORCID: {{ site.orcid }}" title="ORCID: {{ site.orcid }}">
         <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#A6CE39"/><text x="12" y="16.3" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="700" font-style="italic" text-anchor="middle" fill="#ffffff">iD</text></svg>
       </a>

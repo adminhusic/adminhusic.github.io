@@ -75,8 +75,8 @@ areas:
       - "https://doi.org/10.1029/2021GL094497"
 
   - id: "salinization"
-    title: "Urban Impacts"
-    summary: "Tracing pollution in urbanizing and drinking-water basins."
+    title: "Urban Monitoring"
+    summary: "Monitoring salt, sediment, and nutrient pollution in urbanizing and drinking-water basins."
     description: >-
       Tracing the sources and drivers of salt, sediment, and nutrient pollution in urbanizing and
       drinking-water-supply watersheds, and the social-ecological-technological systems behind it.
