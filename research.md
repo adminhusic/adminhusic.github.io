@@ -92,65 +92,32 @@ deforestation, agriculturalization, and climate change, from individual catchmen
 <div class="band band--shade">
   <div class="wrap">
     <h2 class="section-title">Current &amp; Recent Funding</h2>
-    <p class="page-subtitle" style="margin-bottom:20px;">More than $11M in awarded research funding as PI and Co-PI since 2019, supported primarily by the National Science Foundation.</p>
-    <ul class="area-list">
-      <li class="area-row">
-        <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M12 21V12M12 12 6 6M12 12l6-6M6 6V3M18 6V3"/>
-        </svg>
-        <div>
-          <h3>CAREER: Dynamic Connectivity</h3>
-          <p>A research and educational frontier for sustainable environmental management under
-          climate and land use uncertainty. <em>National Science Foundation</em>, 2024&ndash;2029.</p>
+    <p class="page-subtitle" style="margin-bottom:20px;">Current and recently completed grants, supported primarily by the National Science Foundation.</p>
+
+    {% assign grants = site.data.funding.grants %}
+
+    <ul class="funding-ledger">
+      {% for g in grants %}
+      <li class="funding-entry">
+        <div class="funding-entry__head">
+          <span class="funding-entry__agency">{{ g.agency }}</span>
+          <span class="funding-entry__years">{{ g.start_year }}&ndash;{{ g.end_year }}</span>
         </div>
+        <h3 class="funding-entry__title">{{ g.title }}</h3>
+        <p class="funding-entry__desc">{{ g.description }}</p>
+        <dl class="funding-entry__facts">
+          <div class="funding-entry__fact"><dt>Role</dt><dd>{{ g.role }}</dd></div>
+          {% if g.program and g.program != "" %}
+          <div class="funding-entry__fact"><dt>Program</dt><dd>{{ g.program }}</dd></div>
+          {% endif %}
+          {% if g.award_number and g.award_number != "" %}
+          <div class="funding-entry__fact funding-entry__fact--id"><dt>Award No.</dt><dd>{{ g.award_number }}</dd></div>
+          {% endif %}
+        </dl>
       </li>
-      <li class="area-row">
-        <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="9" cy="12" r="6"/>
-          <circle cx="15" cy="12" r="6"/>
-        </svg>
-        <div>
-          <h3>GCR: Freshwater Salinization</h3>
-          <p>Common Pool Resource Theory as a scalable framework for catalyzing stakeholder-driven
-          solutions to the Freshwater Salinization Syndrome. <em>National Science Foundation</em>,
-          2023&ndash;2027.</p>
-        </div>
-      </li>
-      <li class="area-row">
-        <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M3 9c2 0 2 2 4 2s2-2 4-2 2 2 4 2 2-2 4-2"/>
-          <path d="M3 15c2 0 2 2 4 2s2-2 4-2 2 2 4 2 2-2 4-2"/>
-        </svg>
-        <div>
-          <h3>Reservoir Sustainability</h3>
-          <p>Can human-induced turbidity currents enable sustainability of freshwater reservoirs?
-          <em>National Science Foundation</em>, 2023&ndash;2026.</p>
-        </div>
-      </li>
-      <li class="area-row">
-        <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M12 2v15"/>
-          <path d="M12 5h2.5M12 8.5h2.5M12 12h2.5"/>
-          <path d="M3 20c2-1.5 3.5 1.5 5.5 0s3.5-1.5 5.5 0 3.5 1.5 5.5 0"/>
-        </svg>
-        <div>
-          <h3>Broad Run Watershed Monitoring Program</h3>
-          <p>Long-term water quality and sediment monitoring program in Loudoun County, Virginia.
-          <em>Loudoun Water</em>, 2025&ndash;2027.</p>
-        </div>
-      </li>
-      <li class="area-row">
-        <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11Z"/>
-          <circle cx="12" cy="10" r="2.5"/>
-        </svg>
-        <div>
-          <h3>Statewide Reservoir Sedimentation Inventory</h3>
-          <p>A statewide inventory of dominant reservoir sedimentation sources to inform targeted
-          watershed conservation. <em>Kansas Water Office</em>, 2024&ndash;2026.</p>
-        </div>
-      </li>
+      {% endfor %}
     </ul>
+
     <p style="margin-bottom:0;"><a href="{{ '/assets/cv/Husic-CV.pdf' | relative_url }}">See the full list of awarded grants in my CV &rarr;</a></p>
   </div>
 </div>

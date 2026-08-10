@@ -1,0 +1,101 @@
+# Grants shown in the Research page's "Current & Recent Funding" section.
+#
+# This is a CURATED SUBSET, not the full grant history -- the page links to
+# the CV for the complete list (see PRODUCT.md). Add a grant here by adding a
+# block below; nothing else needs to change (no icon to draw, no template to
+# touch).
+#
+# id:            slug, a stable key for this entry (not currently rendered).
+# title:         grant title, shown as the entry heading. Verbatim from the
+#                award/proposal, not rewritten for style.
+# description:   one-sentence description of the work. Verbatim, not rewritten.
+# agency:        the funder's full legal name, shown as plain text. See "NO
+#                AGENCY LOGOS" below before adding an image/icon here.
+# program:       OPTIONAL. The funder's own name for the specific funding
+#                mechanism (e.g. NSF's "CAREER", "GCR", "CAS"). Only federal
+#                awards reliably have one; leave "" for state/local awards
+#                rather than inventing a label. Verify against the actual
+#                award record (NSF's public Award Search / the research.gov
+#                API) rather than guessing -- do not infer from the title.
+# role:          the PI's role on this award ("PI" or "Co-PI"). Confirmed
+#                from the CV for every entry currently below.
+# award_number:  OPTIONAL. Federal awards usually have one; state and local
+#                awards often don't. Leave "" (do NOT write "N/A") so the fact
+#                line is omitted entirely rather than showing an empty claim --
+#                an omitted fact reads as "not tracked," an "N/A" reads as
+#                "checked and confirmed absent," which is a different claim.
+# start_year / end_year: integers. Drive both the displayed year range and the
+#                "Funded Through" stat computed at build time from this file.
+#
+# NO AGENCY LOGOS: NSF, Loudoun Water, and the Kansas Water Office are all
+# rendered as plain text below, deliberately -- not a placeholder pending an
+# icon later. NSF's logo requires case-by-case written clearance from NSF's
+# own branding office (NSFbranding@nsf.gov) and is separately protected by
+# 18 U.S.C. Section 1017 (misuse of a federal seal/logo carries real legal
+# exposure, a different risk class than an ordinary trademark). Loudoun
+# Water's mark is an actively registered trademark with no public reuse
+# policy. The Kansas Water Office's own style guide states in writing "do not
+# recreate the logo -- use only the original art," which rules out a
+# hand-drawn substitute too, and Kansas separately statutes protect the state
+# seal. This mirrors the site's existing "journal badge, not journal logo"
+# rule for Publications and the homepage triptych -- see DESIGN.md. Do not
+# add an image or hand-drawn mark for any funder here without confirmed
+# written permission first.
+
+grants:
+  - id: "career"
+    title: "CAREER: Dynamic Connectivity"
+    description: "A research and educational frontier for sustainable environmental management under climate and land use uncertainty."
+    agency: "National Science Foundation"
+    program: "Hydrologic Sciences"
+    role: "PI"
+    award_number: "2438017"
+    start_year: 2024
+    end_year: 2029
+
+  - id: "gcr"
+    title: "Freshwater Salinization"
+    description: "Common Pool Resource Theory as a scalable framework for catalyzing stakeholder-driven solutions to the Freshwater Salinization Syndrome."
+    agency: "National Science Foundation"
+    program: "Growing Convergence Research"
+    role: "PI"
+    award_number: "2312326"
+    start_year: 2023
+    end_year: 2027
+
+  - id: "reservoir-sustainability"
+    title: "Reservoir Sustainability"
+    description: "Can human-induced turbidity currents enable sustainability of freshwater reservoirs?"
+    agency: "National Science Foundation"
+    program: "Environmental Engineering"
+    role: "PI"
+    award_number: "2500251"
+    # start_year is deliberately kept as the PI's own record, not NSF's
+    # public award-record date. NSF's research.gov listing for 2500251 shows
+    # a start of 2024 (one year later than below); end_year already matches
+    # research.gov's 2027. No-cost extensions and institution transfers can
+    # leave the public award record showing a different span than the work's
+    # actual timeline. Don't "correct" start_year to match research.gov
+    # without asking first.
+    start_year: 2023
+    end_year: 2027
+
+  - id: "broad-run"
+    title: "Broad Run Watershed Monitoring Program"
+    description: "Long-term water quality and sediment monitoring program in Loudoun County, Virginia."
+    agency: "Loudoun Water"
+    program: ""
+    role: "PI"
+    award_number: ""
+    start_year: 2025
+    end_year: 2027
+
+  - id: "statewide-reservoir-sedimentation"
+    title: "Statewide Reservoir Sedimentation Inventory"
+    description: "A statewide inventory of dominant reservoir sedimentation sources to inform targeted watershed conservation."
+    agency: "Kansas Water Office"
+    program: ""
+    role: "PI"
+    award_number: ""
+    start_year: 2024
+    end_year: 2026
