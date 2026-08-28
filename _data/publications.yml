@@ -5,7 +5,12 @@
 # anyway, and listing unpublished work claims a result before it has cleared peer
 # review. A paper enters this file once it is accepted and has a real DOI.
 # "In Press" entries are legitimate published work -- online and citable by DOI,
-# they simply have no volume/page numbers yet.
+# they simply have no volume/page numbers yet. The weekly ORCID sync re-checks
+# every entry whose citation is exactly "In Press" and opens a PR filling in the
+# real citation once the publisher assigns one, so leave that wording as-is
+# rather than substituting "Accepted", "Early View", etc. -- the check matches on
+# it. The entry's `year` is never changed automatically (it sets the file's
+# order too); the PR flags it instead if Crossref disagrees.
 #
 # NOTE ON ENCODING: this file is UTF-8 and contains non-ASCII author names
 # (Brandao, Marin, Gomez, Echavarria are all accented in the real text) plus
@@ -78,7 +83,7 @@
   authors: "<u>Appel, E.</u>, Enderami, A., Sutley, E., and <strong>Husic, A.</strong>"
   title: "Disproportionate exposure to extreme floods in historically redlined U.S. communities"
   journal: "Nature Communications"
-  citation: "In Press"
+  citation: "17(1), 8990"
   doi: "https://doi.org/10.1038/s41467-026-76024-2"
 
 - year: 2026

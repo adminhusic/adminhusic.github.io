@@ -11,9 +11,10 @@ Gemfile.lock
 # so CI installs the same versions; only the installed tree is ignored.
 node_modules/
 
-# Generated each run by sync-orcid.mjs to hand the PR body to the workflow --
-# not source, regenerated every time, never meaningful to diff/commit.
+# Generated each run by sync-orcid.mjs to hand the PR body and title to the
+# workflow -- not source, regenerated every time, never meaningful to diff/commit.
 .github/scripts/sync-orcid-summary.md
+.github/scripts/sync-orcid-title.txt
 
 # Original raw source materials (CV docx, raw PDFs, inspiration links, full-res
 # headshot) kept on disk for reference but not published or duplicated into git

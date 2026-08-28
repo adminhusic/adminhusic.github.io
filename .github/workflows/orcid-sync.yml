@@ -1,9 +1,13 @@
 name: Sync publications from ORCID
 
+# Two checks, one PR: new works on ORCID that aren't on the site yet, and entries
+# already listed as "In Press" that Crossref has since given a volume/issue/pages.
+
 on:
   schedule:
     # Every Monday at 13:00 UTC. Change the cron expression to adjust frequency;
-    # this only checks for new DOIs, it doesn't rebuild/deploy anything on its own.
+    # this only opens a PR against _data/publications.yml, it doesn't rebuild or
+    # deploy anything on its own.
     - cron: "0 13 * * 1"
   workflow_dispatch: {} # lets you trigger a check manually from the Actions tab
 
@@ -47,13 +51,14 @@ jobs:
             cat .github/scripts/sync-orcid-summary.md
             echo "EOF"
           } >> "$GITHUB_OUTPUT"
+          echo "title=$(cat .github/scripts/sync-orcid-title.txt)" >> "$GITHUB_OUTPUT"
 
       - name: Open pull request
         if: steps.diff.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
-          commit-message: "Add publication(s) found on ORCID"
-          title: "New publication(s) found on ORCID"
+          commit-message: ${{ steps.summary.outputs.title }}
+          title: ${{ steps.summary.outputs.title }}
           body: ${{ steps.summary.outputs.body }}
           branch: orcid-sync
           delete-branch: true
