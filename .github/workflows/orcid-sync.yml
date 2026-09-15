@@ -19,21 +19,45 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
+      # If last week's PR hasn't been merged or closed yet, stop here. Otherwise the
+      # "Open pull request" step below would force-reset the orcid-sync branch to a
+      # freshly generated file and silently wipe any corrections made in that PR.
+      # Nothing is lost by waiting: anything new is still on ORCID next week.
+      - name: Skip if a sync PR is still open
+        id: pending
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          open=$(gh pr list --repo "$GITHUB_REPOSITORY" --head orcid-sync --state open --json number --jq 'length')
+          if [ "$open" != "0" ]; then
+            echo "open=true" >> "$GITHUB_OUTPUT"
+            msg="Skipped: a sync pull request (branch orcid-sync) is still open. Merge or close it and the next run will check again."
+            echo "::notice::$msg"
+            echo "$msg" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "open=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Check out repo
+        if: steps.pending.outputs.open != 'true'
         uses: actions/checkout@v4
 
       - name: Set up Node.js
+        if: steps.pending.outputs.open != 'true'
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
       - name: Install script dependencies
+        if: steps.pending.outputs.open != 'true'
         run: npm install
 
       - name: Run ORCID sync
+        if: steps.pending.outputs.open != 'true'
         run: npm run sync-orcid
 
       - name: Check for changes
+        if: steps.pending.outputs.open != 'true'
         id: diff
         run: |
           if git diff --quiet -- _data/publications.yml; then

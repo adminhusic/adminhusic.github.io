@@ -117,13 +117,21 @@ async function fetchOrcidDois() {
   const res = await fetch(url, { headers: { Accept: "application/json", "User-Agent": USER_AGENT } });
   if (!res.ok) throw new Error(`ORCID API returned ${res.status} ${res.statusText}`);
   const data = await res.json();
-  const dois = new Set();
+  // normalized (lowercase) DOI -> DOI as the publisher registered it. The lowercase
+  // key is only for matching against the file; the entry is written with the
+  // original casing ("10.1029/2026GL123244"), which is how every hand-entered DOI in
+  // publications.yml appears. Crossref's own `DOI` field comes back lowercased, so
+  // ORCID's copy is the one that still carries the publisher's capitals.
+  const dois = new Map();
   for (const group of data.group || []) {
     const ids = group["external-ids"]?.["external-id"] || [];
     for (const id of ids) {
       if ((id["external-id-type"] || "").toLowerCase() === "doi") {
         const doi = normalizeDoi(id["external-id-value"]);
-        if (doi) dois.add(doi);
+        const display = String(id["external-id-value"])
+          .trim()
+          .replace(/^https?:\/\/(dx\.)?doi\.org\//i, "");
+        if (doi && !dois.has(doi)) dois.set(doi, display);
       }
     }
   }
@@ -143,11 +151,10 @@ async function fetchCrossrefWork(doi) {
 function formatAuthorName(author, labRoster, flags) {
   const family = author.family || "";
   const given = author.given || "";
-  const initials = given
-    .split(/[\s.-]+/)
-    .filter(Boolean)
-    .map((n) => n[0].toUpperCase() + ".")
-    .join(" ");
+  // First initial only ("Golden, H.", never "Golden, H. E."), matching the author
+  // lists already in publications.yml. Crossref often includes middle initials.
+  const firstGiven = given.split(/[\s.-]+/).find(Boolean);
+  const initials = firstGiven ? firstGiven[0].toUpperCase() + "." : "";
   const plain = initials ? `${family}, ${initials}` : family;
 
   const isHusic = /^husic$/i.test(family);
@@ -346,7 +353,7 @@ function crossrefYear(message) {
 async function addNewWorks(state, known, labRoster) {
   console.log(`Checking ORCID ${ORCID_ID} for works not yet in _data/publications.yml...`);
   const orcidDois = await fetchOrcidDois();
-  const newDois = [...orcidDois].filter((doi) => !known.has(doi));
+  const newDois = [...orcidDois.keys()].filter((doi) => !known.has(doi));
 
   const added = [];
   const flags = [];
@@ -380,6 +387,7 @@ async function addNewWorks(state, known, labRoster) {
 
       const entryFlags = [];
       const entry = buildEntry(doi, message, labRoster, entryFlags);
+      entry.doi = `https://doi.org/${orcidDois.get(doi)}`; // publisher casing, not lowercased
       // Build and validate a candidate before committing it to `state`. If the splice
       // produces something YAML can't read, the throw lands in the catch below with
       // `state` untouched -- this DOI is skipped and flagged, and the rest of the run
