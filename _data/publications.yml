@@ -61,6 +61,15 @@
 
 - year: 2026
   status: "published"
+  lead: "external"
+  authors: "Seybold, E., Hammond, J., <strong>Husic, A.</strong>, McMillan, H., Golden, H., Christensen, J., Segura, C., Zimmer, M., Price, A., Jaeger, K., Li, L., Mahoney, D., Cheng, F., Jones, C., Kelleher, C., Sando, R., Lane, C., and Ward, A."
+  title: "Emergent Headwater Types for Watershed Monitoring, Research, and Planning"
+  journal: "Geophysical Research Letters"
+  citation: "53(17), e2026GL123244"
+  doi: "https://doi.org/10.1029/2026GL123244"
+
+- year: 2026
+  status: "published"
   lead: "lab"
   authors: "<u>Sigdel, N.</u> and <strong>Husic, A.</strong>"
   title: "U.S. rivers are transporting more suspended sediment, often in less time"
