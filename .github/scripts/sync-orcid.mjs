@@ -254,8 +254,10 @@ function buildEntry(doi, message, labRoster, flags) {
     status: "published",
     lead,
     authors: authorsHtml,
-    title: decodeEntities((message.title || [])[0]) || "(title unavailable)",
-    journal: decodeEntities((message["container-title"] || [])[0]) || null,
+    // Collapse runs of whitespace: Crossref titles sometimes carry doubled spaces or
+    // line breaks from the publisher's deposit ("a global  compilation").
+    title: decodeEntities((message.title || [])[0])?.replace(/\s+/g, " ").trim() || "(title unavailable)",
+    journal: decodeEntities((message["container-title"] || [])[0])?.replace(/\s+/g, " ").trim() || null,
     citation: citation || "In Press",
     doi: `https://doi.org/${doi}`,
   };
