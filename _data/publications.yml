@@ -61,6 +61,15 @@
 
 - year: 2026
   status: "published"
+  lead: "external"
+  authors: "Zang, Y., Treble, P., Yoshimura, K., Pinza, J., Zhang, F., Özdemir Çallı, K., Mei, X., <strong>Husic, A.</strong>, Gessert, A., Stroj, A., Andreo, B., Ladouche, B., Stumpp, C., Mance, D., Zagana, E., Huang, F., Sappa, G., Kunstmann, H., Brielmann, H., Zhou, H., Wu, H., Garvelmann, J., Berglund, J., Charlier, J., Lange, J., Barberá Fornell, J., Pu, J., Katsanou, K., Ren, K., Toran, L., Gill, L., Filippini, M., Kralik, M., Mudarra Martínez, M., Zhao, M., Luo, M., Goldscheider, N., Lambrakis, N., De Vita, P., Xiao, Q., Yu, S., Iacurto, S., Coda, S., McCormack, T., Allocca, V., Darling, W., D'Alessandro, W., Guo, X., Hu, Y., Wang, Z., Kaminsky, E., Faimon, J., Lang, M., Pracný, P., Persoiu, A., and Hartmann, A."
+  title: "The WoKaS-Iso database: workflow for a global compilation of oxygen-18 and deuterium records in karst springs and cave drip water for enhanced understanding of karst systems"
+  journal: "Earth System Science Data"
+  citation: "18(10), 7199–7225"
+  doi: "https://doi.org/10.5194/essd-18-7199-2026"
+
+- year: 2026
+  status: "published"
   lead: "lab"
   authors: "<u>Percich, A.</u>, Gellis, A., Fox, J., and <strong>Husic, A.</strong>"
   title: "Upscaling sediment source prediction for watershed management"
