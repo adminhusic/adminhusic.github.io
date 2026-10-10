@@ -2,7 +2,7 @@
 layout: default
 title: Join Us
 subtitle: "We're growing at the Occoquan Watershed Monitoring Laboratory, Virginia Tech."
-description: "Admin Husic welcomes inquiries from prospective doctoral students and postdoctoral researchers at Virginia Tech's Occoquan Watershed Monitoring Laboratory."
+description: "Admin Husić welcomes inquiries from prospective doctoral students and postdoctoral researchers at Virginia Tech's Occoquan Watershed Monitoring Laboratory."
 image: /assets/img/husic-headshot.jpg
 ---
 
@@ -112,7 +112,7 @@ image: /assets/img/husic-headshot.jpg
   </div>
 
   <div class="letter__signoff">
-    <p class="letter__signoff-name">Admin Husic</p>
+    <p class="letter__signoff-name">Admin Husić</p>
     <p class="letter__signoff-contact"><a href="mailto:{{ site.email }}?subject={{ mail_subject | uri_escape }}">{{ site.email }}</a></p>
   </div>
 </div>

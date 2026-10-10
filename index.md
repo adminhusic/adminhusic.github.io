@@ -2,7 +2,7 @@
 layout: default
 hide_title: true
 description: >-
-  Admin Husic is an Associate Professor of Civil and Environmental Engineering
+  Admin Husić is an Associate Professor of Civil and Environmental Engineering
   at Virginia Tech, studying hydrologic connectivity and the transport of
   water, sediment, and nutrients across human-altered landscapes.
 image: /assets/img/husic-headshot.jpg
@@ -10,10 +10,10 @@ image: /assets/img/husic-headshot.jpg
 
 <div class="hero">
   <div class="hero__photo">
-    <img src="{{ '/assets/img/husic-headshot.jpg' | relative_url }}" alt="Portrait of Admin Husic" width="200" height="200">
+    <img src="{{ '/assets/img/husic-headshot.jpg' | relative_url }}" alt="Portrait of Admin Husić" width="200" height="200">
   </div>
   <div>
-    <h1 class="hero__name">Admin Husic</h1>
+    <h1 class="hero__name">Admin Husić</h1>
     <p class="hero__title">Associate Professor &middot; Occoquan Watershed Monitoring Laboratory &middot; Charles E. Via, Jr. Department of Civil & Environmental Engineering &middot; Virginia Tech</p>
     <div class="hero__links">
       <a class="icon-link" href="{{ site.vt_profile }}" target="_blank" rel="noopener" aria-label="Virginia Tech Faculty Profile" title="Virginia Tech Faculty Profile">

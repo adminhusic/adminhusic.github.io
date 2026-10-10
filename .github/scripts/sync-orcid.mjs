@@ -157,8 +157,14 @@ function formatAuthorName(author, labRoster, flags) {
   const initials = firstGiven ? firstGiven[0].toUpperCase() + "." : "";
   const plain = initials ? `${family}, ${initials}` : family;
 
-  const isHusic = /^husic$/i.test(family);
-  if (isHusic) return { text: `<strong>${plain}</strong>`, isHusic: true, isLab: false };
+  // The site spells the surname "Husić", but papers published before the change are
+  // registered with Crossref as "Husic". Match either, and always write "Husić" so new
+  // entries agree with the rest of publications.yml.
+  const isHusic = /^husi[cć]$/i.test(family.normalize("NFC"));
+  if (isHusic) {
+    const name = initials ? `Husić, ${initials}` : "Husić";
+    return { text: `<strong>${name}</strong>`, isHusic: true, isLab: false };
+  }
 
   const matches = labRoster.get(family.toLowerCase());
   if (matches && matches.length === 1) {

@@ -2,7 +2,7 @@
 layout: default
 title: Teaching
 subtitle: "Undergraduate and graduate courses in fluid mechanics, open channel hydraulics, sediment transport, and machine learning."
-description: "Courses taught by Admin Husic at Virginia Tech: fluid mechanics, open channel hydraulics, sediment transport, and machine learning for water resources."
+description: "Courses taught by Admin Husić at Virginia Tech: fluid mechanics, open channel hydraulics, sediment transport, and machine learning for water resources."
 image: /assets/img/husic-headshot.jpg
 ---
 

@@ -3,7 +3,7 @@ layout: default
 hide_title: true
 title: Publications
 subtitle: "Peer-reviewed journal articles."
-description: "Peer-reviewed journal articles by Admin Husic and the Dynamic Connectivity Lab at Virginia Tech, with a DOI for every publication."
+description: "Peer-reviewed journal articles by Admin Husić and the Dynamic Connectivity Lab at Virginia Tech, with a DOI for every publication."
 image: /assets/img/husic-headshot.jpg
 ---
 

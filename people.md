@@ -2,7 +2,7 @@
 layout: default
 title: People
 subtitle: "The researchers behind the work, at Virginia Tech and University of Kansas."
-description: "Meet the Dynamic Connectivity Lab: Admin Husic's research group at Virginia Tech, plus alumni from Virginia Tech and the University of Kansas."
+description: "Meet the Dynamic Connectivity Lab: Admin Husić's research group at Virginia Tech, plus alumni from Virginia Tech and the University of Kansas."
 image: /assets/img/husic-headshot.jpg
 ---
 
