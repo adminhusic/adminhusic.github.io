@@ -2,7 +2,7 @@
 layout: default
 hide_title: true
 description: >-
-  Admin Husić is an Associate Professor of Civil and Environmental Engineering
+  Admin Husić (also written Husic) is an Associate Professor of Civil and Environmental Engineering
   at Virginia Tech, studying hydrologic connectivity and the transport of
   water, sediment, and nutrients across human-altered landscapes.
 image: /assets/img/husic-headshot.jpg
